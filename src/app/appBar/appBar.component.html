@@ -1,3 +1,31 @@
-<p>
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident non ratione fugiat, eum harum deleniti iure. Quos enim maiores dignissimos suscipit alias nemo cum. Possimus laborum architecto quidem debitis ex.
-</p>
+<header >
+    <div class="navbar">
+      <div class="logo font-bold"><a href="#">TIENTCHEU ISRAEL</a></div>
+      <ul class="links">
+        <li><a href="hero">HOME</a></li>
+        <li><a href="categorie">ABOUT ME</a></li>
+        <li><a href="reviews">WORK</a></li>
+        <li><a href="members">EXPERIENCES</a></li>
+        <li><a href="contact">CONTACT ME</a></li>
+      </ul>
+      <button class="button" (click)="toggleButton()" [ngClass]="{'active':isToggle}" id="btn">
+        <span></span>
+      </button>
+      <div class="toggle_button" (click)="toggleMenu()">
+        <fa-icon [icon]="isOpen ? faXmark :faBars"></fa-icon>
+      </div>
+    </div> 
+    
+    <div class="dropdown_menu" [ngClass]="{'open':isOpen}">
+      <li><a href="hero">HOME</a></li>
+      <li><a href="categorie">ABOUT ME</a></li>
+      <li><a href="reviews">WORK</a></li>
+      <li><a href="members">EXPERIENCES</a></li>
+      <li><a href="contact">CONTACT ME</a></li>
+      <button class="button">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  

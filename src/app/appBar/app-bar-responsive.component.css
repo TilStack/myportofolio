@@ -1,0 +1,23 @@
+
+/* RESPONSIVE DESIGN*/
+@media (max-width: 992px){
+    .navbar .links,
+    .navbar .button{
+        display: none;
+    }
+
+    .navbar .toggle_button{
+        display: block;
+    }
+
+    .dropdown_menu{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}

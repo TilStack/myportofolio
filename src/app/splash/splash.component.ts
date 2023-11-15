@@ -4,7 +4,7 @@ import { SplashAnimationType } from './type';
 @Component({
   selector: 'app-splash',
   templateUrl: './splash.component.html',
-  styleUrls: ['./splash.component.scss']
+  styleUrls: ['./splash.component.scss','splash-responsive.component.scss']
 })
 export class SplashComponent implements OnInit {
 
@@ -13,7 +13,7 @@ export class SplashComponent implements OnInit {
   opacityChange:number=1;
   splashTransition:string;
 
-  @Input() animationDuration:number=0.5;
+  @Input() animationDuration:number=1;
   @Input() duration:number=3;
   @Input() animationType:SplashAnimationType=SplashAnimationType.SlideLeft;
 
@@ -27,7 +27,7 @@ export class SplashComponent implements OnInit {
           break;
         case SplashAnimationType.slideRight:
             this.windowWidth=window.innerWidth+'px';
-            transitionStyle='left '+this.animationDuration+'s';
+            transitionStyle='right '+this.animationDuration+'s';
             break;
         case SplashAnimationType.FadeOut:
             transitionStyle='opacity '+this.animationDuration+'s';
