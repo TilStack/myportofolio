@@ -1,0 +1,10 @@
+.head {
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border: none;
+    background-image: linear-gradient(#0f246318 0.9px, transparent 0.9px), linear-gradient(to right, #0f246313 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
+    background-size: 18px 18px;
+}
+

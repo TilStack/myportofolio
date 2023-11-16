@@ -9,14 +9,24 @@ import { HomeComponent } from './home/home.component';
 import { AnimationDirective } from './animations/animation.directive';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
+import { WorksComponent } from './works/works.component';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { ContactmeComponent } from './contactme/contactme.component';
 
 @NgModule({
-  declarations: [		
+  declarations: [							
     AnimationDirective,	
     AppComponent,
       AppBarComponent,
       SplashComponent,
-      HomeComponent
+      HomeComponent,
+      PagenotfoundComponent,
+      AboutmeComponent,
+      WorksComponent,
+      ExperiencesComponent,
+      ContactmeComponent
    ],
   imports: [
     FormsModule,

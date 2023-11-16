@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars, faXmark,faMoon,faSun,faSearch,faClose } from "@fortawesome/free-solid-svg-icons";
+import { NavigationEnd, Router } from '@angular/router';
+import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
 @Component({
   selector: 'app-appBar',
   templateUrl: './appBar.component.html',
@@ -8,15 +9,18 @@ import { faBars, faXmark,faMoon,faSun,faSearch,faClose } from "@fortawesome/free
 export class AppBarComponent implements OnInit {
   faBars=faBars
   faXmark=faXmark
-  faMoon=faMoon
-  faSun=faSun
-  faSearch=faSearch
-  faClose=faClose
   isSearchVisible = false;
   isOpen=false
   isToggle=false
   searchValue: string = '';
-  constructor() { }
+  activeLink:string=''
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activeLink = event.url;
+      }
+    });
+  }
 
   toggleSearchView() {
     this.isSearchVisible = !this.isSearchVisible;
@@ -35,4 +39,5 @@ export class AppBarComponent implements OnInit {
   ngOnInit() {
   }
 
+  
 }

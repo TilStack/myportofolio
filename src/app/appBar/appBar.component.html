@@ -1,14 +1,18 @@
 <header >
     <div class="navbar">
-      <div class="logo font-bold"><a href="#">TIENTCHEU ISRAEL</a></div>
+      <div class="logo"><a routerLink="/about">TIENTCHEU ISRAEL</a></div>
       <ul class="links">
-        <li><a href="hero">HOME</a></li>
-        <li><a href="categorie">ABOUT ME</a></li>
-        <li><a href="reviews">WORK</a></li>
-        <li><a href="members">EXPERIENCES</a></li>
-        <li><a href="contact">CONTACT ME</a></li>
+        <li><a routerLink="/home"[class.active]="activeLink === '/home'">Home</a></li>
+        <li><a routerLink="/about"[class.active]="activeLink === '/about'">About Me</a></li>
+        <li><a routerLink="/work"[class.active]="activeLink === '/work'">Work</a></li>
+        <li><a routerLink="/experience"[class.active]="activeLink === '/experience'">Experiences</a></li>
+        <li><a routerLink="/contact"[class.active]="activeLink === '/contact'">Contact Me</a></li>
       </ul>
-      <button class="button" (click)="toggleButton()" [ngClass]="{'active':isToggle}" id="btn">
+      <!-- <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+      </span>   -->
+      <button class="button" (click)="toggleButton()" [ngClass]="{'activ':isToggle}" id="btn">
         <span></span>
       </button>
       <div class="toggle_button" (click)="toggleMenu()">
@@ -17,14 +21,11 @@
     </div> 
     
     <div class="dropdown_menu" [ngClass]="{'open':isOpen}">
-      <li><a href="hero">HOME</a></li>
-      <li><a href="categorie">ABOUT ME</a></li>
-      <li><a href="reviews">WORK</a></li>
-      <li><a href="members">EXPERIENCES</a></li>
-      <li><a href="contact">CONTACT ME</a></li>
-      <button class="button">
-        <span></span>
-      </button>
+      <li><a routerLink="/home">HOME</a></li>
+      <li><a routerLink="/about">ABOUT ME</a></li>
+      <li><a routerLink="/work">WORK</a></li>
+      <li><a routerLink="/experience">EXPERIENCES</a></li>
+      <li><a routerLink="/contact">CONTACT ME</a></li>
     </div>
   </header>
 

@@ -9,10 +9,13 @@ a{
 }
 
 .logo a{
-    font-size: 1.5rem;
-}
-a:hover{
-    color: orange;
+    font-size: 20px;
+    cursor: help;
+    opacity: 1;
+    height: 10px;
+    width: 10px;
+    transform: none;
+    color: rgb(28, 29, 32);
 }
 
 /* HEADER */
@@ -34,6 +37,18 @@ header{
 .navbar .links{
     display: flex;
     gap: 2rem;
+}
+
+.navbar .links a{
+    margin-right: 5px;
+    padding: 10px 16px;
+    border-radius: 20px;
+}
+.navbar .links a:hover,
+.navbar .links  a.active{
+    font-weight: bold;
+    transition: ease-in-out 1s;
+
 }
 
 .navbar .toggle_button{
@@ -64,11 +79,11 @@ header{
     transition: background 0.5s, margin-left 0.5s;
 }
 
-.active{
+.activ{
     background: green;
 }
 
-.active span{
+.activ span{
     background: #fff;
     margin-left: 31px;
 }
