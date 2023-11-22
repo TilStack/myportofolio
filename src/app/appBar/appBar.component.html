@@ -1,6 +1,6 @@
-<header >
+<header>
     <div class="navbar">
-      <div class="logo"><a routerLink="/about">TIENTCHEU ISRAEL</a></div>
+      <div class="logo"><a routerLink="/about">TIENTCHEU ISRAEL<b>.</b></a></div>
       <ul class="links">
         <li><a routerLink="/home"[class.active]="activeLink === '/home'">Home</a></li>
         <li><a routerLink="/about"[class.active]="activeLink === '/about'">About Me</a></li>
@@ -8,10 +8,6 @@
         <li><a routerLink="/experience"[class.active]="activeLink === '/experience'">Experiences</a></li>
         <li><a routerLink="/contact"[class.active]="activeLink === '/contact'">Contact Me</a></li>
       </ul>
-      <!-- <span class="relative flex h-3 w-3">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-      </span>   -->
       <button class="button" (click)="toggleButton()" [ngClass]="{'activ':isToggle}" id="btn">
         <span></span>
       </button>
@@ -21,11 +17,11 @@
     </div> 
     
     <div class="dropdown_menu" [ngClass]="{'open':isOpen}">
-      <li><a routerLink="/home">HOME</a></li>
-      <li><a routerLink="/about">ABOUT ME</a></li>
-      <li><a routerLink="/work">WORK</a></li>
-      <li><a routerLink="/experience">EXPERIENCES</a></li>
-      <li><a routerLink="/contact">CONTACT ME</a></li>
+      <li><a routerLink="/home" [class.active]="activeLink === '/home'">HOME</a></li>
+      <li><a routerLink="/about" [class.active]="activeLink === '/about'">ABOUT ME</a></li>
+      <li><a routerLink="/work" [class.active]="activeLink === '/work'">WORK</a></li>
+      <li><a routerLink="/experience" [class.active]="activeLink === '/experience'">EXPERIENCES</a></li>
+      <li><a routerLink="/contact" [class.active]="activeLink === '/contact'">CONTACT ME</a></li>
     </div>
   </header>
 
