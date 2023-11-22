@@ -14,9 +14,12 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { WorksComponent } from './works/works.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { ContactmeComponent } from './contactme/contactme.component';
+import { FooterComponent } from './footer/footer.component';
+import { ModeToggleService } from 'src/styles/mode.service';
+import { MODE_STORAGE_SERVICE, ModeLocalStorageService } from 'src/styles/storage.service';
 
 @NgModule({
-  declarations: [							
+  declarations: [								
     AnimationDirective,	
     AppComponent,
       AppBarComponent,
@@ -26,7 +29,8 @@ import { ContactmeComponent } from './contactme/contactme.component';
       AboutmeComponent,
       WorksComponent,
       ExperiencesComponent,
-      ContactmeComponent
+      ContactmeComponent,
+      FooterComponent
    ],
   imports: [
     FormsModule,
@@ -34,7 +38,13 @@ import { ContactmeComponent } from './contactme/contactme.component';
     FontAwesomeModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ModeToggleService,
+    {
+      provide: MODE_STORAGE_SERVICE,
+      useClass: ModeLocalStorageService,
+    },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

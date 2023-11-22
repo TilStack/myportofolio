@@ -1,31 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "./styles/variables";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.cursor{
-    position: fixed;
-    width: 32px;
-    height: 32px;
-    border: 2px solid #1f1e1e;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: .1s;
-}
+// .cursor{
+//     position: fixed;
+//     width: 32px;
+//     height: 32px;
+//     border: 2px solid #1f1e1e;
+//     border-radius: 50%;
+//     left: 0;
+//     top: 0;
+//     pointer-events: none;
+//     transform: translate(-50%, -50%);
+//     transition: .1s;
+// }
 
 .cursor2{
     position: fixed;
-    width: 5px;
-    height: 5px;
+    width: 9px;
+    height: 9px;
     background-color:#1f1e1e ;
     border-radius: 50%;
     left: 0;
     top: 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    
+    transition: 0.15s;
 }
 
 @keyframes cursorAnim {
@@ -36,15 +37,10 @@
         transform: scale(.7);
     }
 }
-/*
-.content:hover ~ .cursor{
-    transform: translate(-50%,-50%) scale(1.5);
-    background-color: #c6c6c6;
-    opacity: .5;
+body.dark {
+    @include darken();
+  }
+body.light {
+    @include lighten();
 }
-
-.content:hover ~ .cursor2{
-    opacity: 0;
-}*/
-
-html, body { height: 100%; }
+  
