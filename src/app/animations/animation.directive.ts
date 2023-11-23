@@ -4,9 +4,8 @@ import { Directive, ElementRef, Input } from '@angular/core';
   selector: '[appAnimation]'
 })
 export class AnimationDirective {
-
-  @Input('sectionAnimations') orderShow = 0 ;
-  constructor(private el: ElementRef) {
+  @Input('appAnimation') orderShow = 0 ;
+  constructor(private el: ElementRef) { 
     const ratio = .1;
     const options = {
       root: null, // display zone
