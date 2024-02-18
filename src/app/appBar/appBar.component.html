@@ -6,6 +6,7 @@
         <li><a routerLink="/about"[class.active]="activeLink === '/about'">About Me</a></li>
         <li><a routerLink="/work"[class.active]="activeLink === '/work'">Work</a></li>
         <li><a routerLink="/experience"[class.active]="activeLink === '/experience'">Experiences</a></li>
+        <li><a routerLink="/citations"[class.active]="activeLink === '/citations'">Citations</a></li>
         <li><a routerLink="/contact"[class.active]="activeLink === '/contact'">Contact Me</a></li>
       </ul>
       <button class="button" (click)="toggleButton()" [ngClass]="{'activ':isToggle}" id="btn">
@@ -21,6 +22,7 @@
       <li><a routerLink="/about" [class.active]="activeLink === '/about'">ABOUT ME</a></li>
       <li><a routerLink="/work" [class.active]="activeLink === '/work'">WORK</a></li>
       <li><a routerLink="/experience" [class.active]="activeLink === '/experience'">EXPERIENCES</a></li>
+      <li><a routerLink="/citations" [class.active]="activeLink === '/citations'">CITATIONS</a></li>
       <li><a routerLink="/contact" [class.active]="activeLink === '/contact'">CONTACT ME</a></li>
     </div>
   </header>

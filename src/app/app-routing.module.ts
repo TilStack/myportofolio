@@ -6,6 +6,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { WorksComponent } from './works/works.component';
+import { CitationComponent } from './citation/citation.component';
 const routes: Routes = [
   {
     path:"home",component:HomeComponent,
@@ -15,6 +16,9 @@ const routes: Routes = [
   },
   {
     path:"experience",component:ExperiencesComponent,
+  },
+  {
+    path:"citations",component:CitationComponent,
   },
   {
     path:"contact",component:ContactmeComponent,
