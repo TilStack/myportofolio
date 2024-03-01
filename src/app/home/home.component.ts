@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationDirective } from '../animations/animation.directive';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,13 @@ import { AnimationDirective } from '../animations/animation.directive';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  goOnPageMe(){
+    this.router.navigate(['/about'])
   }
 
 }

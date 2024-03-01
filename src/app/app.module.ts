@@ -16,7 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ModeToggleService } from 'src/styles/mode.service';
 import { MODE_STORAGE_SERVICE, ModeLocalStorageService } from 'src/styles/storage.service';
 import { AnimationDirective } from './animations/animation.directive';
-import { CitationComponent } from './citation/citation/citation.component';
+import { CitationComponent } from './citation/citation.component';
 
 @NgModule({
   declarations: [									
