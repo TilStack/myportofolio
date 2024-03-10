@@ -125,14 +125,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #222;
+    border: #0f0f0f 1px solid;
     margin-left: 40%;
     margin-right:40% ;
     border-radius: 15px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Ajout de transition pour une animation fluide */
 }
 
-.downoald a{
+.downoald a {
     padding: 20px;
+    color: #0f0f0f;
+    text-decoration: none; /* Pour enlever le soulignement par défaut des liens */
+    transition: color 0.3s; /* Ajout de transition pour une animation fluide */
+}
+
+.downoald:hover {
+    background-color: #0f0f0f;
+}
+
+.downoald:hover a {
     color: #fff;
 }
