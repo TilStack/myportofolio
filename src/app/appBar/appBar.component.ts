@@ -17,11 +17,7 @@ export class AppBarComponent implements OnInit {
   activeLink:string=''
   ;
   constructor(private router: Router,private modeToggleService: ModeToggleService) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.activeLink = event.url;
-      }
-    });
+   
   }
 
   toggleSearchView() {
@@ -39,7 +35,12 @@ export class AppBarComponent implements OnInit {
   }
 
 
-  ngOnInit() {
+  ngOnInit() {!
+     this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activeLink = event.url;
+      }
+    });
   }
 
   

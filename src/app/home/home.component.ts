@@ -1,21 +1,29 @@
-import { Component, OnInit } from '@angular/core';
-import { AnimationDirective } from '../animations/animation.directive';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import VanillaTilt from 'vanilla-tilt';
+import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss','./home-responsive.component.scss']
+  styleUrls: ['./home.component.scss', './home-responsive.component.scss']
 })
 export class HomeComponent implements OnInit {
+  faArrowRight=faArrowRight
 
-  constructor(private router:Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    // if (this.tiltImageRef) {
+    //   VanillaTilt.init(this.tiltImageRef.nativeElement, { max: 25, speed: 400 });
+    // }
+
+    // if (this.tiltImagesRef) {
+    //   VanillaTilt.init(this.tiltImagesRef.nativeElement);
+    // }
   }
 
-  goOnPageMe(){
-    this.router.navigate(['/about'])
+  goOnPageMe() {
+    this.router.navigate(['/about']);
   }
-
 }
