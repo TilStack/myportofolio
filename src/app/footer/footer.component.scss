@@ -1,11 +1,10 @@
 .footer{
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    position: fixed;
+    bottom: 1rem;  
+    left: 0;          
+    width: 100%; 
 }
   
-.footer h6{
-    font-size:1em;
-}
 
 

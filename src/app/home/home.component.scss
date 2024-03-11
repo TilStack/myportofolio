@@ -2,6 +2,8 @@
     font-weight: 900;
     height:100vh;
     border: none;
+    background-size: cover;
+    background-position: center;
     background-image: linear-gradient(#0f246318 0.9px, transparent 0.9px), linear-gradient(to right, #0f246313 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
     background-size: 18px 18px;
 }
@@ -75,8 +77,8 @@
 .sci li a{
     position: relative;
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     background-color: #ccc;
     display: flex;
     justify-content: center;
@@ -85,7 +87,7 @@
     border-radius: 15px;
     text-decoration: none;
     margin: 20px;
-    font-size: 2em;
+    font-size: 1.5em;
     transform-style: preserve-3d;
     perspective: 500px;
     box-shadow: 0 25px 35px rgba(0,0, 0, 0.1);    
@@ -125,7 +127,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #0f0f0f 1px solid;
+    border: #292626 0.5px solid;
+    margin-top: 20px;
     margin-left: 40%;
     margin-right:40% ;
     border-radius: 15px;
@@ -142,8 +145,10 @@
 
 .downoald:hover {
     background-color: #0f0f0f;
+    border-color: #fff;
 }
 
 .downoald:hover a {
     color: #fff;
 }
+
