@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-aboutme',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.scss','./aboutme-responsive.component.scss']
 })
 export class AboutmeComponent implements OnInit {
-
+  faArrowRight=faArrowRight
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
