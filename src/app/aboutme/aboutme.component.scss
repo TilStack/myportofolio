@@ -8,14 +8,14 @@
  .container1{
     padding-top: 8%;
     padding-bottom: 8%;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
  }
 
 .whoamI{
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 50%;
 }
 
 .whoamI .title h1{
@@ -24,7 +24,7 @@
     line-height: 3.55rem;
     padding-bottom: 10px;
     margin-bottom: 30px;
-    border-bottom: 1px solid  black ;
+    border-bottom: 2px solid  black ;
 }
 
 .whoamI p{
@@ -83,6 +83,7 @@
     max-width: 100%;
     border-radius: 10px;
     backface-visibility: hidden;
+    object-fit: cover;
   }
 
   
@@ -143,3 +144,114 @@
     transform: translateY(0);
     opacity: 1;
   }
+
+  /*---- Languages ----*/
+.language{
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.language .title h1{
+  font-weight: 500;
+  font-size: 4.40rem;
+  line-height: 3.55rem;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+.language .contain{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.language .contain .item{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 20px;
+  border: 0.5px solid #888;
+  border-radius: 15px;
+  height: auto;
+  width: 300px;
+  margin: 10px;
+}
+
+.item p{
+  padding-top: 5px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.item .sub{
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.setup{
+  margin-top: 30px;
+
+  .title{
+    display: flex;
+    flex-direction: column;
+    
+    .other{
+      height: 1px;
+      width: 100%;
+      background-color: grey;
+      margin-bottom: 20px;
+    }
+
+    h1{
+      font-weight: 300;
+      font-size: 3.40rem;
+      line-height: 2.55rem;
+      margin-top: 10px;
+      margin-bottom: 30px;    
+    }
+
+    p{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 200;
+    }
+  }
+
+  .contain{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+
+    .slider{
+      width: 40%;
+      height: 20%;
+
+      img{
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+
+    .caracteristiques{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      height: 20%;
+
+      .item{
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+.preferences{
+  width: 100%;
+  margin-top: 20px; 
+}

@@ -10,7 +10,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { WorksComponent } from './works/works.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
+import { SkillsComponent } from './skills/skills.component';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { FooterComponent } from './footer/footer.component';
 import { ModeToggleService } from 'src/styles/mode.service';
@@ -27,7 +27,7 @@ import { CitationComponent } from './citation/citation.component';
     PagenotfoundComponent,
     AboutmeComponent,
     WorksComponent,
-    ExperiencesComponent,
+    SkillsComponent,
     ContactmeComponent,
     FooterComponent,
     AnimationDirective,

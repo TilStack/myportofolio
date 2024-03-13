@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactmeComponent } from './contactme/contactme.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
+import { SkillsComponent } from './skills/skills.component';
 import { WorksComponent } from './works/works.component';
 import { CitationComponent } from './citation/citation.component';
 const routes: Routes = [
@@ -15,7 +15,7 @@ const routes: Routes = [
     path:"work",component:WorksComponent,
   },
   {
-    path:"experience",component:ExperiencesComponent,
+    path:"skills",component:SkillsComponent,
   },
   {
     path:"citations",component:CitationComponent,
