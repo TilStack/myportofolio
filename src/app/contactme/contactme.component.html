@@ -1,32 +1,60 @@
 <div class="head">
   <div class="container1">
     <div class="objectif">
-        <div class="title" [appAnimation]="2">
+        <div class="title">
             <h1>How to contact me ?</h1>
         </div>
-        <p>I am open to any encouragement, contribution and/or discussion of mobile and web 
+        <p [appAnimation]="2">I am open to any encouragement, contribution and/or discussion of mobile and web 
             projects too. Contact me via email or from my linkedIn account.</p>
     </div>
 
-     <div class="media">
+    <div class="media">
         <div class="contain">
-            <div class="tit">
-                <h2>Contacts</h2>
-            </div>
-            <div class="subtitle">
+            <!-- <h2>Contacts</h2> -->
+            <div class="email">
                 <h3>Email</h3>
+                <div class="cont" [appAnimation]="2">
+                    <ul>
+                       <li> <a href="mailto:israeltientcheu@gmail.com"><fa-icon [icon]="faMailReply"></fa-icon>israel01tientcheu@gmail.com</a></li>
+                       <li>
+                            <a href="https://github.com/TilStack"><i class="fa fa-github"></i>GitHub</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p><a href="mailto:israeltientcheu@gmail.com">israeltientcheu@gmail.com</a></p>
-            <div class="subtitle">
+            <div class="medias">
                 <h3>Social media !</h3>
-            </div>
-            <p><a href="https://github.com/TilStack">GitHub</a></p>
-            <p><a href="https://twitter.com/israelTientcheu">X (Twitter)</a></p>
-            <p><a href="www.linkedin.com/in/israel-tientcheu-12278b298">linkedIn</a></p>
-            <p><a href="https://www.facebook.com/israel.tientcheu">Facebook</a></p>
-            <p><a href="#">Medium</a></p>
-            <p><a href="#">My Bento</a></p>
+                <div class="cont" [appAnimation]="2">
+                    <ul>                        
+                        <li><a href="https://twitter.com/israelTientcheu"><i class="fa fa-twitter"></i>X (Twitter)</a></li>
+                        <li><a href="www.linkedin.com/in/israel-tientcheu-12278b298"><i class="fa fa-linkedin"></i>linkedIn</a></li>
+                        <li><a href="https://www.facebook.com/israel.tientcheu"><i class="fa fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://www.facebook.com/israel.tientcheu"><i class="fa fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://medium.com/@TIL_Stack"><i class="fa fa-medium"></i>Medium</a></li>
+                        <li><a href="https://open.spotify.com/user/31eigczeqw3ldx2rmqick5v2hnje"><i class="fa fa-spotify"></i>Spotify</a></li>
+                        <li><a href="https://bento.me/tilstack"><i class="fa fa-linkedin"></i>My Bento</a></li>
+                    </ul>                                                      
+                </div>
+            </div>          
         </div>
-     </div>
+    </div>
+
+    <div class="contact-me">
+        <form action="">
+            <span [appAnimation]="2">
+                <label for="">What's your name ?</label>
+            </span>
+            <input [appAnimation]="2" placeholder="Tientcheu Israel !" type="text" style="opacity: 1;" [(ngModel)]="name">
+            <span [appAnimation]="2">
+                <label for="">What's your email ?</label>
+            </span>
+            <input  [appAnimation]="2" placeholder="israel01tientcheu@gmail.com !" type="text" style="opacity: 1;" [(ngModel)]="name">
+            <span [appAnimation]="2">
+                <label for="">What do you want to tell me ?</label>
+            </span>
+            <textarea [appAnimation]="2" placeholder="Hello TIL Stack, can like your... !" style="opacity: 1;" [(ngModel)]="name"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
   </div>
 </div>

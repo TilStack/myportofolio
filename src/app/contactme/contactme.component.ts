@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faRightFromBracket, faMailBulk} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-contactme',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactmeComponent implements OnInit {
 
+  faRightFromBracket=faRightFromBracket
+  faMailReply=faMailBulk
+  name:string
   constructor() { }
 
   ngOnInit() {
