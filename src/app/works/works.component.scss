@@ -72,10 +72,11 @@
             flex-wrap: wrap;
             justify-content: space-between;
            
-            .image{
+            .image{ 
+                width: 50%;
                 img{
-                    width: 400px;
-                    height: 450px;
+                    width: 100%;
+                    height: 400px;
                     border-radius: 12px;
                     margin: 15px;
                     object-fit: cover;
@@ -410,7 +411,7 @@
                             .name{
                                 text-transform: uppercase;
                                 font-weight: normal;
-                                color: red;
+                                color: orange;
                                 font-size: 1.1rem;
                             }
                         }
@@ -424,7 +425,6 @@
         margin-top: 10%;
         margin-left: 10px;
         margin-right: 10px;
-        margin: 10px;
         display: flex;
         flex-direction: column;
         
@@ -578,9 +578,9 @@
             justify-content: space-between;
            
             .image{
-                width: 100%;
+                width: 50%;
                 img{
-                    width: 600px;
+                    width: 100%;
                     height: 400px;
                     border-radius: 12px;
                     margin: 15px;
@@ -638,6 +638,7 @@
                                 font-weight: normal;
                                 text-transform: uppercase;
                                 padding: 10px;
+                                margin: 5px;
                                 border-radius: 10px;
                                 font-size: 1.1rem;
                                 border: 0.5px solid grey;
@@ -664,7 +665,7 @@
                             .name{
                                 text-transform: uppercase;
                                 font-weight: normal;
-                                color: red;
+                                color: orange;
                                 font-size: 1.1rem;
                             }
                         }
