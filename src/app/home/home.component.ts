@@ -1,6 +1,5 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import VanillaTilt from 'vanilla-tilt';
 import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
