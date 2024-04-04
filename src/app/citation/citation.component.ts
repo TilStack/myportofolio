@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faSearch} from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faHeart} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-citation',
@@ -8,6 +8,7 @@ import { faSearch} from "@fortawesome/free-solid-svg-icons";
 })
 export class CitationComponent implements OnInit{
   faSearch=faSearch
+  faHeart=faHeart
 
   ngOnInit(): void {
     
