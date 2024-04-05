@@ -9,7 +9,7 @@ import { faSearch, faHeart} from "@fortawesome/free-solid-svg-icons";
 export class CitationComponent implements OnInit{
   faSearch=faSearch
   faHeart=faHeart
-
+  number="2"
   ngOnInit(): void {
     
   }

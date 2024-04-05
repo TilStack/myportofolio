@@ -53,18 +53,25 @@
         input{
             padding: 10px;
             margin-right: 5px;
-
+            border-radius: 5px;
         }
 
         fa-icon{
             font-size: 20px;
             font-weight: bold;
-            border-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
             background: rgb(224, 221, 221);
             border: 0.5px solid black;
             cursor: pointer;
             padding: 12px;
 
+        }
+
+        fa-icon:hover{
+            box-shadow: #0f246313;
+            color: orange;
+            font-weight: bold;
         }
     }
 
@@ -86,26 +93,55 @@
                 justify-content: flex-start;
 
                 a{
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     cursor: pointer;
                 }
 
                 span{
                     font-style: italic;
                     font-weight: normal;
-                    font-size: 1.5rem;
+                    font-size: 1.3rem;
                     letter-spacing: 1px;
                 }
 
-                .like{
+                .foot{
                     margin-top: 10px;
-                    cursor: pointer;
-                    height: auto;
-                    width: auto;
-                }
-
-                .like:hover{
-                    background-color: red;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .like{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        height: 30px;
+                        fa-icon{
+                            margin-top: 10px;
+                            cursor: pointer;
+                            height: auto;
+                            font-size: 25px;
+                            width: auto;
+                        }
+    
+                        fa-icon:hover{
+                            color: red;
+                            font-size: 30px;
+                        }
+    
+                        .number{
+                            margin-top: 5px;
+                            margin-left: 10px;
+                            color: grey;
+                            font-weight: 400;
+                            font-size: 1rem;
+                        }
+                       
+                    }
+                    .date{
+                        font-style: normal;
+                        font-style: normal;
+                        font-weight:500 ;
+                        font-size: 1rem;
+                    }
                 }
             }
             .box:hover{
