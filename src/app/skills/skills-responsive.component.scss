@@ -32,10 +32,26 @@
         width: 100%;
         .skill{
             .title h1{
+                width: 100%;
                 font-size: 2.40rem;
             }
+
             p{
                 font-size: 1em;
+            }
+
+            .contain{
+                margin-top: 5%;
+                margin-left: 0;                 
+               .skill-card{
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+               }    
             }
         }
         
@@ -47,10 +63,26 @@
         width: 100%;
         .skill{
             .title h1{
+                width: 100%;
                 font-size: 2.40rem;
             }
+
             p{
                 font-size: 1em;
+            }
+
+            .contain{
+                margin-top: 5%;
+                margin-left: 0;                 
+               .skill-card{
+                    img{
+                        width: 50px;
+                        height: 50px;
+                    }
+                    p{
+                        font-size: 10px;
+                    }
+               }    
             }
         }
         
