@@ -21,3 +21,31 @@ footer{
     right: 0;
     cursor: pointer;
   }
+
+//Responsive Mobile
+@media screen and (min-width:350px) and (max-width:500px){
+    .scroll-to-top{
+        padding: 15px;
+        fa-icon{
+            font-size: 18px;
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:340px){
+    .scroll-to-top{
+        padding: 15px;
+        fa-icon{
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (min-width:160px) and (max-width:250px){
+    .scroll-to-top{
+        padding: 15px;
+        fa-icon{
+            font-size: 10px;
+        }
+    }
+}
