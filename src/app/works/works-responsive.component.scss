@@ -1,0 +1,279 @@
+//Responsive Mobile
+@media screen and (min-width:350px) and (max-width:500px){
+    .container1{
+        .worktitle{
+            width: 100%;
+            .title h1{
+                width: 100%;
+                font-size: 2.20rem;
+            }
+
+            p{
+                font-size: 1em;
+                text-align: justify;
+            }
+        }
+
+        .works{
+            width: 100%;
+            .card1-work, .card3-work, .card5-work{
+                .title{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+                .content{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        img{
+                            height: 200px;
+                        }
+                    }
+
+                    .caracteristique{
+                        width: 100%;
+                        .desc p{
+                            font-size: 0.8rem;
+                        }
+                        .cont{
+                            ul{
+                                span{
+                                    font-size: 0.9rem;
+                                }
+
+                                .tech1{
+                                    .card-tech{
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .card2-work, .card4-work, .card6-work{
+                .title{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+                .content{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        img{
+                            height: 200px;
+                        }
+                    }
+
+                    .caracteristique{
+                        width: 100%;
+                        .desc p{
+                            font-size: 0.8rem;
+                        }
+                        .cont{
+                            ul{
+                                span{
+                                    font-size: 0.9rem;
+                                }
+
+                                .tech1{
+                                    .card-tech{
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:340px){
+    .container1{
+        .worktitle{
+            width: 100%;
+            .title h1{
+                width: 100%;
+                font-size: 2.20rem;
+            }
+
+            p{
+                font-size: 1em;
+                text-align: justify;
+            }
+        }
+
+        .works{
+            width: 100%;
+            .card1-work, .card3-work, .card5-work{
+                .title{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+                .content{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        img{
+                            height: 200px;
+                        }
+                    }
+
+                    .caracteristique{
+                        width: 100%;
+                        .desc p{
+                            font-size: 0.8rem;
+                        }
+                        .cont{
+                            ul{
+                                span{
+                                    font-size: 0.9rem;
+                                }
+
+                                .tech1{
+                                    .card-tech{
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .card2-work, .card4-work, .card6-work{
+                .title{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+                .content{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        img{
+                            height: 200px;
+                        }
+                    }
+
+                    .caracteristique{
+                        width: 100%;
+                        .desc p{
+                            font-size: 0.8rem;
+                        }
+                        .cont{
+                            ul{
+                                span{
+                                    font-size: 0.9rem;
+                                }
+
+                                .tech1{
+                                    .card-tech{
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:160px) and (max-width:250px){
+    .container1{
+        .worktitle{
+            width: 100%;
+            .title h1{
+                width: 100%;
+                font-size: 2.20rem;
+            }
+
+            p{
+                font-size: 1em;
+                text-align: justify;
+            }
+        }
+
+        .works{
+            width: 100%;
+            .card1-work, .card3-work, .card5-work{
+                .title{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+                .content{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        img{
+                            height: 200px;
+                        }
+                    }
+
+                    .caracteristique{
+                        width: 100%;
+                        .desc p{
+                            font-size: 0.8rem;
+                        }
+                        .cont{
+                            ul{
+                                span{
+                                    font-size: 0.9rem;
+                                }
+
+                                .tech1{
+                                    .card-tech{
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .card2-work, .card4-work, .card6-work{
+                .title{
+                    h2{
+                        font-size: 1.2rem;
+                    }
+                }
+                .content{
+                    flex-direction: column;
+                    .image{
+                        width: 100%;
+                        img{
+                            height: 200px;
+                        }
+                    }
+
+                    .caracteristique{
+                        width: 100%;
+                        .desc p{
+                            font-size: 0.8rem;
+                        }
+                        .cont{
+                            ul{
+                                span{
+                                    font-size: 0.9rem;
+                                }
+
+                                .tech1{
+                                    .card-tech{
+                                        font-size: 0.9rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
