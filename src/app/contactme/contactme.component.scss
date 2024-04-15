@@ -100,6 +100,16 @@
 .contact-me{
     width: 100%;
     margin-top: 10px;
+    
+    h3{
+        letter-spacing: 2px;
+        border-bottom: 0.5px solid grey;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        font-size: 2rem;
+        display: flex;
+        visibility: hidden;
+    }
 
     form{
         display: flex;

@@ -1,0 +1,152 @@
+//Responsive Mobile
+@media screen and (min-width:350px) and (max-width:500px){
+    .objectif {
+        width: 100%;
+        .title h1{
+           font-size: 2.40rem;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+    .media{
+        .contain{
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+
+            .medias{
+                .cont{
+                    width: 80%;
+                    align-items: flex-end;
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+    .contact-me{
+        h3{
+            visibility: visible;
+            align-items: flex-end;
+        }
+
+        form{
+
+            span,label{
+                font-size: 0.8em;
+            }
+
+            input,textarea{
+                width: 100%;
+                border: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:340px){
+    .objectif {
+        width: 100%;
+        .title h1{
+           font-size: 2.30rem;
+        }
+        p{
+            font-size: 0.8em;
+        }
+    }
+    .media{
+        .contain{
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+
+            h3{
+                font-size: 1.6rem;
+            }
+
+            li {
+                a{
+                    font-size: 12px;
+                }
+            }
+            .medias{
+                .cont{
+                    width: 80%;
+                    align-items: flex-end;
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+    .contact-me{
+        h3{
+            visibility: visible;
+            align-items: flex-end;
+            font-size: 1.6rem;
+        }
+
+        form{
+
+            span,label{
+                font-size: 0.6em;
+            }
+
+            input,textarea{
+                width: 100%;
+                border: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:160px) and (max-width:250px){
+    .objectif {
+        width: 100%;
+        .title h1{
+           font-size: 2.40rem;
+        }
+        p{
+            font-size: 1em;
+        }
+    }
+    .media{
+        .contain{
+            flex-direction: column;
+            width: 100%;
+            margin-left: 0;
+
+            li {
+                a{
+                    font-size: 12px;
+                }
+            }
+
+            .medias{
+                .cont{
+                    width: 80%;
+                    align-items: flex-end;
+                    margin-left: 5%;
+                }
+            }
+        }
+    }
+    .contact-me{
+        h3{
+            visibility: visible;
+            align-items: flex-end;
+            font-size: 1.6rem;
+        }
+
+        form{
+
+            span,label{
+                font-size: 0.8em;
+            }
+
+            input,textarea{
+                width: 100%;
+                border: 0;
+            }
+        }
+    }
+}
