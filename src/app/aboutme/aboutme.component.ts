@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight,faHeart} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-aboutme',
@@ -8,6 +8,8 @@ import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
 })
 export class AboutmeComponent implements OnInit {
   faArrowRight=faArrowRight
+  faHeart=faHeart
+  number="2"
   constructor() { }
 
   ngOnInit() {
