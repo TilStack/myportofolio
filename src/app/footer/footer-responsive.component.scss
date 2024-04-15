@@ -1,6 +1,18 @@
 //Responsive Mobile
-@media screen and (min-width:160px) and (max-width:250px){
-    .footer h6{
+@media screen and (min-width:350px) and (max-width:500px){
+    .footer{
       font-size: 0.5em;
     }
   }
+
+@media screen and (min-width:320px) and (max-width:340px){
+  .footer{
+    font-size: 0.4em;
+  }
+}
+
+@media screen and (min-width:160px) and (max-width:250px){
+  .footer{
+    font-size: 0.3em;
+  }
+}
