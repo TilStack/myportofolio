@@ -1,5 +1,5 @@
 //Responsive Mobile
-@media screen and (min-width:350px) and (max-width:500px){
+@media screen and (min-width:350px) and (max-width:600px){
     .container1 {        
         .whoamI{
             width: 100%;
@@ -25,6 +25,13 @@
         }
 
         .setup{
+
+            .title{
+                p{
+                    font-size: 15px;
+                    padding: 10px;
+                }
+            }
             .contain{
                 flex-direction: column;
                 justify-content: center;
