@@ -1,12 +1,420 @@
 //Responsive Mobile
 @media screen and (min-width:350px) and (max-width:500px){
-   
+    .container1 {        
+        .whoamI{
+            width: 100%;
+            .title h1{
+                width: 100%;
+                font-size: 2.40rem;
+            }
+
+            p{
+                font-size: 1em;
+            }
+        }
+
+        .picture{
+            .contain{
+                flex-direction: column;
+            }
+
+            .snip1504{
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .setup{
+            .contain{
+                flex-direction: column;
+                justify-content: center;
+
+                .slider img{
+                    width: 80%;
+                    height: 50%;
+                }
+
+                .caracteristiques{
+                    width: 100%;
+
+                    .item{
+                        .title{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .preferences{
+             .title{
+                h1{
+                    width: 100%;
+                    font-size: 2.20rem;
+                }
+             }
+
+             .content{               
+                .item{
+                    .header{
+                        width: 80%;
+                    }
+                    .item-content{
+                        .box{
+                            a{
+                                font-size: 0.7rem;
+                            }
+                            span{
+                                font-size: 1rem;
+                            }
+                            .foot{
+                                .like{
+                                    fa-icon{
+                                        font-size: 10px;
+                                    }
+                                    .number{
+                                        margin-top: 10px;
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                                .date{
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .card-book{
+                        p{
+                            font-size: 0.85rem;
+                        }
+                        p span{
+                            font-size: 0.7rem;
+                        }
+                    }
+                    .card-article{
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+
+                        .link1{
+                            display: flex;                         
+                            a{
+                                flex-wrap: wrap;
+                                font-size: 14px;
+                            }
+                        }
+
+                        .content-article{
+                            flex-direction: column;
+
+                            .site{
+                                font-size: 12px;
+                            }
+                            .right1{
+                                width: 100%;
+                                .titre{
+                                    font-size: 15px;
+                                }
+                                .desc{
+                                    font-size: 13px;
+                                }
+                            }
+                            .left1 img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+             }
+        }
+    }
 }
 
 @media screen and (min-width:320px) and (max-width:340px){
-    
+    .container1 {        
+        .whoamI{
+            width: 100%;
+            .title h1{
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 0.8em;
+            }
+        }
+
+        .picture{
+            p{
+                font-size: 0.6em;
+            }
+            .contain{
+                flex-direction: column;
+            }
+
+            .snip1504{
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .setup{
+            .title{
+                p{
+                    font-size: 0.6em;
+                    padding: 10px;
+                }
+            }
+            .contain{
+                flex-direction: column;
+                justify-content: center;
+
+                .slider img{
+                    width: 80%;
+                    height: 50%;
+                }
+
+                .caracteristiques{
+                    width: 100%;
+
+                    .item{
+                        .title{
+                            width: 100%;
+                            font-size: 0.8em;
+                        }
+                        .content-item{
+                            span{
+                                font-size: 0.6em;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .preferences{
+             .title{
+                h1{
+                    width: 100%;
+                    font-size: 2rem;
+                }
+             }
+
+            .content{
+                .item{
+                    .item-content{
+                        .box{
+                            a{
+                                font-size: 0.7rem;
+                            }
+                            span{
+                                font-size: 1rem;
+                            }
+                            .foot{
+                                .like{
+                                    fa-icon{
+                                        font-size: 10px;
+                                    }
+                                    .number{
+                                        margin-top: 10px;
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                                .date{
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .card-book{
+                        p{
+                            font-size: 0.85rem;
+                        }
+                        p span{
+                            font-size: 0.7rem;
+                        }
+                    }
+                    .card-article{
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+
+                        .link1{
+                            display: flex;                         
+                            a{
+                                flex-wrap: wrap;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .content-article{
+                            flex-direction: column;
+                            .site{
+                                font-size: 12px;
+                            }
+                            .right1{
+                                width: 100%;
+
+                                .titre{
+                                    font-size: 15px;
+                                }
+                                .desc{
+                                    font-size: 13px;
+                                }
+                            }
+                            .left1 img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width:160px) and (max-width:250px){
-   
+    .container1 {        
+        .whoamI{
+            width: 100%;
+            .title h1{
+                width: 100%;
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 0.8em;
+            }
+        }
+
+        .picture{
+            p{
+                font-size: 0.6em;
+            }
+            .contain{
+                flex-direction: column;
+            }
+
+            .snip1504{
+                min-width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .setup{
+            .title{
+                p{
+                    font-size: 0.6em;
+                    padding: 10px;
+                }
+            }
+            .contain{
+                flex-direction: column;
+                justify-content: center;
+
+                .slider img{
+                    width: 80%;
+                    height: 50%;
+                }
+
+                .caracteristiques{
+                    width: 100%;
+
+                    .item{
+                        .title{
+                            width: 100%;
+                            font-size: 0.8em;
+                        }
+                        .content-item{
+                            span{
+                                font-size: 0.6em;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .preferences{
+             .title{
+                h1{
+                    width: 100%;
+                    font-size: 2rem;
+                }
+             }
+
+             .content{
+                .item{
+                    .item-content{
+                        .box{
+                            a{
+                                font-size: 0.7rem;
+                            }
+                            span{
+                                font-size: 1rem;
+                            }
+                            .foot{
+                                .like{
+                                    fa-icon{
+                                        font-size: 10px;
+                                    }
+                                    .number{
+                                        margin-top: 10px;
+                                        font-size: 0.8rem;
+                                    }
+                                }
+                                .date{
+                                    font-size: 0.8rem;
+                                }
+                            }
+                        }
+                    }
+                    .card-book{
+                        p{
+                            font-size: 0.85rem;
+                        }
+                        p span{
+                            font-size: 0.7rem;
+                        }
+                    }
+
+                    .card-article{
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+
+                        .link1{
+                            display: flex;                         
+                            a{
+                                flex-wrap: wrap;
+                                font-size: 13px;
+                            }
+                        }
+
+                        .content-article{
+                            flex-direction: column;
+
+                            .site{
+                                font-size: 12px;
+                            }
+                            .right1{
+                                width: 100%;
+                                .titre{
+                                    font-size: 15px;
+                                }
+                                .desc{
+                                    font-size: 13px;
+                                }
+                            }
+                            .left1 img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+             }
+        }
+    }
 }
