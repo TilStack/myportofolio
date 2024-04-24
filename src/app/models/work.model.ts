@@ -1,4 +1,4 @@
-class work{
+export class work{
     id?:string;
     date:string;
     image:string;

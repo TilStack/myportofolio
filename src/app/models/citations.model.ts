@@ -1,4 +1,4 @@
-class Citation {
+export class quote {
     autorname:string
     content:string
     img:string

@@ -1,3 +1,3 @@
-class setup{
+export class setup{
     
 }

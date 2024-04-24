@@ -17,6 +17,9 @@ import { ModeToggleService } from 'src/styles/mode.service';
 import { MODE_STORAGE_SERVICE, ModeLocalStorageService } from 'src/styles/storage.service';
 import { AnimationDirective } from './animations/animation.directive';
 import { CitationComponent } from './citation/citation.component';
+import { environment } from 'src/environments/environment';
+import { getFirestore,provideFirestore } from "@angular/fire/firestore";
+import { provideFirebaseApp,initializeApp } from "@angular/fire/app";
 
 @NgModule({
   declarations: [									
@@ -37,7 +40,9 @@ import { CitationComponent } from './citation/citation.component';
     FormsModule,
     BrowserModule,
     FontAwesomeModule,
-    AppRoutingModule
+    AppRoutingModule,  
+    provideFirebaseApp(()=>initializeApp(environment.firebase)),
+    provideFirestore(()=>getFirestore()),
   ],
   exports: [
     AnimationDirective,

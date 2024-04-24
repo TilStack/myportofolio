@@ -1,4 +1,4 @@
-class article{
+export class article{
     id:string;
     company_name:string;
     desc:string;

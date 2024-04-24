@@ -1,4 +1,4 @@
-class book{
+export class book{
     id?:string;
     autor:string;
     statut:boolean;
