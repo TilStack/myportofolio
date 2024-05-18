@@ -20,7 +20,13 @@ import { CitationComponent } from './citation/citation.component';
 import { environment } from 'src/environments/environment';
 import { getFirestore,provideFirestore } from "@angular/fire/firestore";
 import { provideFirebaseApp,initializeApp } from "@angular/fire/app";
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+export function HttpLoaderFactory(http:HttpClient){
+  return new TranslateHttpLoader(http);
+}
 @NgModule({
   declarations: [									
     AppComponent,
@@ -41,18 +47,29 @@ import { provideFirebaseApp,initializeApp } from "@angular/fire/app";
     BrowserModule,
     FontAwesomeModule,
     AppRoutingModule,  
+    HttpClientModule,
+    TranslateModule.forRoot(
+      {
+      loader:{
+        provide:TranslateLoader,
+        useFactory:HttpLoaderFactory,
+        deps:[HttpClient]
+      }
+    }
+  ),
     provideFirebaseApp(()=>initializeApp(environment.firebase)),
     provideFirestore(()=>getFirestore()),
   ],
   exports: [
     AnimationDirective,
   ],
-  providers: [
+  providers: [   
     ModeToggleService,
     {
       provide: MODE_STORAGE_SERVICE,
       useClass: ModeLocalStorageService,
     },
+    HttpClient,
   ],
   bootstrap: [AppComponent]
 })

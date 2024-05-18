@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { faBars, faXmark} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark,faChevronDown} from "@fortawesome/free-solid-svg-icons";
 import { ModeToggleService } from 'src/styles/mode.service';
+import { TranslateService } from '@ngx-translate/core';
+
 @Component({
   selector: 'app-appBar',
   templateUrl: './appBar.component.html',
@@ -10,15 +12,18 @@ import { ModeToggleService } from 'src/styles/mode.service';
 export class AppBarComponent implements OnInit {
   faBars=faBars
   faXmark=faXmark
+  faChevronDown=faChevronDown
   isSearchVisible = false;
   isOpen=false
   isToggle=false
   searchValue: string = '';
   activeLink:string=''
   ;
-  constructor(private router: Router,private modeToggleService: ModeToggleService) {
+  lang:string ='';
+  constructor(private router: Router,private modeToggleService: ModeToggleService,private translateService:TranslateService) {
    
   }
+  
 
   toggleSearchView() {
     this.isSearchVisible = !this.isSearchVisible;
@@ -35,12 +40,21 @@ export class AppBarComponent implements OnInit {
   }
 
 
-  ngOnInit() {!
-     this.router.events.subscribe((event) => {
+  ngOnInit() {
+    this.lang = localStorage.getItem('lang') || 'en';
+    !this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.activeLink = event.url;
       }
     });
+  }
+  ChangeLang(lang:any){
+    const selectedLanguage = lang.target.value;
+
+    localStorage.setItem('lang',selectedLanguage);
+
+    this.translateService.use(selectedLanguage);
+
   }
 
   

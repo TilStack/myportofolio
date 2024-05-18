@@ -4,6 +4,7 @@ import { Mode } from 'src/styles/mode.model';
 import { ModeToggleService } from 'src/styles/mode.service';
 import { ViewportScroller } from '@angular/common';
 import { faArrowUp} from "@fortawesome/free-solid-svg-icons";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -16,10 +17,12 @@ export class AppComponent implements OnInit{
   pageYoffset = 0;
   animationTyp:SplashAnimationType;
   currentMode: Mode = Mode.LIGHT;
-  constructor(private modeToggleService: ModeToggleService,private scroll: ViewportScroller) {
+  constructor(private modeToggleService: ModeToggleService,private scroll: ViewportScroller,private translateService:TranslateService) {
     /**
      * Example code that demonstrate the modeChanged$ observable behavior and usage
-     */
+     */    
+    this.translateService.setDefaultLang('en');
+    this.translateService.use(localStorage.getItem('lang') || 'en')
     this.modeToggleService.modeChanged$.subscribe((mode: Mode) => {
       this.currentMode = mode;
     });
