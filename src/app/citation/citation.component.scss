@@ -82,7 +82,7 @@
         .box-content{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-            gap: 15px;
+            gap: 20px;
 
             .box{
                 box-shadow: 0 5px 10px rgba(0, 0, 0, .2);

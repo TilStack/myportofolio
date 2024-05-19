@@ -41,21 +41,22 @@
 
     <div class="contact-me">
         <h3>Write me !</h3>
-        <form action="">
+        <form (ngSubmit)="onSubmit(form)" #form="ngForm">
             <span>
-                <label for="">What's your name ?</label>
+                <label for="name">What's your name?</label>
             </span>
-            <input [appAnimation]="2" placeholder="Tientcheu Israel !" type="text" style="opacity: 1;" [(ngModel)]="name">
+            <input [appAnimation]="2" placeholder="Tientcheu Israel !" type="text" ngModel name="name" #name="ngModel">
             <span>
-                <label for="">What's your email ?</label>
+                <label for="email">What's your email?</label>
             </span>
-            <input  [appAnimation]="2" placeholder="israel01tientcheu@gmail.com !" type="text" style="opacity: 1;" [(ngModel)]="name">
-            <span >
-                <label for="">What do you want to tell me ?</label>
+            <input [appAnimation]="2" placeholder="israel01tientcheu@gmail.com !" type="email" ngModel name="email" #email="ngModel">
+            <span>
+                <label for="message">What do you want to tell me?</label>
             </span>
-            <textarea [appAnimation]="2" placeholder="Hello TIL Stack, can i like your... !" style="opacity: 1;" [(ngModel)]="name"></textarea>
+            <textarea [appAnimation]="2" placeholder="Hello TIL Stack, can I like your... !" ngModel name="message" #message="ngModel"></textarea>
             <button type="submit">Submit</button>
         </form>
+        
     </div>
   </div>
 </div>

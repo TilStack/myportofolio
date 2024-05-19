@@ -51,6 +51,7 @@ header{
 }
 .navbar .links a:hover,
 .navbar .links  a.active{
+    color: #0f2364;
     font-weight: bold;
     transition: ease-in-out 0.5s;
 }
@@ -163,3 +164,62 @@ header{
 .dropdown_menu  a.active:after{
     width: 50%;
 }
+
+
+/* SELECT MENU*/
+/* Style for the select menu container */
+.select-menu {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Style for the nav item to ensure proper spacing */
+.select-menu .nav-item {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the select element */
+.select-menu .form-select {
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background-color: #fff; /* White background */
+    color: #495057; /* Dark text color */
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style for the select element on focus */
+.select-menu .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.25);
+}
+
+/* Style for the select element options */
+.select-menu .form-select option {
+    padding: 10px;
+    background-color: #fff;
+    color: #495057;
+}
+
+/* Additional styling for a more polished look */
+.select-menu .form-select::-ms-expand {
+    display: none; /* Remove default dropdown arrow in IE */
+}
+
+.select-menu .form-select {
+    -webkit-appearance: none; /* Remove default dropdown arrow in Chrome/Safari */
+    -moz-appearance: none; /* Remove default dropdown arrow in Firefox */
+    appearance: none; /* Standard property */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 10px;
+}
+

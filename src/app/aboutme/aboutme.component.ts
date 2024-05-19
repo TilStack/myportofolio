@@ -15,5 +15,7 @@ export class AboutmeComponent implements OnInit {
   ngOnInit() {
     
   }
-
+  navigateTo(url:string):void{
+    window.location.href=url
+  }
 }
