@@ -3,16 +3,14 @@
     <div class="container1">
         <div class="whoamI">
             <div class="title"  [appAnimation]="2">
-                <h1>What about me ?</h1>
+                <h1>{{'about_container1_whoamI_title_h1' | translate}}</h1>
             </div>
-            <p  [appAnimation]="2" > My parents gave me the name TIENTCHEU ISRAEL and I am also known as TIL STACK (TIENTCHEU ISRAEL FULLSTACK).
-            For my little story, I am a fullstack developer from Cameroon who really likes mobile applications but also do the Web app. I am passionate about research, teamwork and above all 
-            the desire to develop my skills day by day.</p>
+            <p  [appAnimation]="2" >{{'about_container1_whoamI_p1' | translate}}</p>
         </div> 
         <div class="picture">
             <div class="contain">
                 <div class="rule"  [appAnimation]="3" >
-                    <p> My tof since 27/12/2023<fa-icon [icon]="faArrowRight"></fa-icon></p>
+                    <p>{{'about_container1_picture_rule_p' | translate}}<fa-icon [icon]="faArrowRight"></fa-icon></p>
                 </div>
                 <figure class="snip1504"  [appAnimation]="3" >
                     <img [appAnimation]="2" src="../../assets/img/2.png" alt="tilstack">
@@ -41,7 +39,7 @@
         </div> -->
         <div class="setup">
             <div class="title"  [appAnimation]="2" >  
-                <p>Current Setup</p>            
+                <p>{{'about_setup_title_p' | translate}}</p>            
             </div>
             <div class="contain">
                 <div class="slider"[appAnimation]="2">
@@ -49,7 +47,7 @@
                 </div>
                 <div class="caracteristiques">
                     <div class="item"[appAnimation]="2">
-                        <p class="title">- LAPTOP DELL </p>
+                        <p class="title">{{'about_setup_caracteristiques_item1_title_p' | translate}}</p>
                         <div class="content-item">
                             <span>Dell inc.Latitude 5490</span>
                             <span>16Go RAM, 500G ROM</span>
@@ -58,7 +56,7 @@
                         </div>                      
                     </div>
                     <div class="item"[appAnimation]="2">
-                        <p class="title">- Phone Techno </p>
+                        <p class="title">{{'about_setup_caracteristiques_item2_title_p' | translate}}</p>
                         <div class="content-item">
                             <span>Tecno Camon 16 S</span>
                             <span>Android 10</span>
@@ -90,18 +88,18 @@
         </div>            
         <div class="preferences">  
             <div class="title" [appAnimation]="2">
-                <h1>I also like to do some things </h1>
+                <h1>{{'about_preferences_title_h1' | translate}} </h1>
             </div>   
             <div class="content">
                 <div class="item">
                     <div class="header" [appAnimation]="2">
-                        <p>Create Quotes</p>
+                        <p>{{'about_preferences_content_item1_header_p' | translate}}</p>
                     </div>
                     <div class="item-content" [appAnimation]="2">
                         <div class="box">
                             <img src="" alt="">
                             <a href="/about">TIL Stack</a>
-                            <span inert>Je suis TILStack et TILStack c'est moi</span>
+                            <span inert>{{'about_preferences_content_item1_item-content_box_span1' | translate}}</span>
                             <div class="foot">
                                 <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                                 <span class="date">01/01/2024</span>
@@ -110,7 +108,7 @@
                         <div class="box"(click)="navigateTo('https://x.com/israelTientcheu/status/1788477352093090092')">
                             <img src="" alt="">
                             <a href="/about">TIL Stack</a>
-                            <span inert>La conséquence corrige. Le conseil préviens.</span>
+                            <span inert>{{'about_preferences_content_item1_item-content_box_span2' | translate}}</span>
                             <div class="foot">
                                 <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                                 <span class="date">09/05/2024</span>
@@ -119,7 +117,7 @@
                         <div class="box"(click)="navigateTo('https://x.com/israelTientcheu/status/1783440365556580601')">
                             <img src="" alt="">
                             <a href="/about">TIL Stack</a>
-                            <span inert>Apprecie le bonheur qui s'epanouit dans tout ce que tu as autour de toi.</span>
+                            <span inert>{{'about_preferences_content_item1_item-content_box_span3' | translate}}</span>
                             <div class="foot">
                                 <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                                 <span class="date">25/04/2024</span>
@@ -130,7 +128,7 @@
                 </div>                
                 <div class="item">
                     <div class="header" [appAnimation]="2" >
-                        <p>Read Books</p>
+                        <p>{{'about_preferences_content_item2_header_p' | translate}}</p>
                     </div>
                     <div class="item-content" [appAnimation]="2">
                         <div class="card-book" >
@@ -154,7 +152,7 @@
                 </div>
                 <div class="item">
                     <div class="header" [appAnimation]="2">
-                        <p>Write Articles</p>
+                        <p>{{'about_preferences_content_item3_header_p' | translate}}</p>
                     </div>
                     <div class="item-content" [appAnimation]="2">                      
                         <div class="card-article">
@@ -165,10 +163,10 @@
                                 <div class="right1">
                                     <div class="site">Zerofiltre.tech</div>
                                     <div class="titre">
-                                        Flutter Toast 2024 | Notifier vos utilisateurs avec style
+                                        {{'about_preferences_content_item3_item-content_card-article1_content-article_right1_titre' | translate}}
                                     </div>
                                     <div class="desc">
-                                        Un moyen simple, efficace et stylé d'informer vos utilisateurs.
+                                        {{'about_preferences_content_item3_item-content_card-article1_content-article_right1_desc' | translate}}
                                     </div>
                                 </div>
                                 <div class="left1">
@@ -184,10 +182,10 @@
                                 <div class="right1">
                                     <div class="site">Zerofiltre.tech</div>
                                     <div class="titre">
-                                        Améliorer l'expérience utilisateur avec les fichiers Lottie dans vos projets Flutter mobile et web
+                                        {{'about_preferences_content_item3_item-content_card-article2_content-article_right1_titre' | translate}}
                                     </div>
                                     <div class="desc">
-                                        Guide pratique qui explique comment ajouter des animations à des projets Flutter à l'aide de fichiers Lottie.
+                                        {{'about_preferences_content_item3_item-content_card-article2_content-article_right1_desc' | translate}}
                                     </div>
                                 </div>
                                 <div class="left1">
@@ -200,34 +198,34 @@
                 </div>
                 <div class="item">
                     <div class="header" [appAnimation]="2" >
-                        <p>Take Pictures</p>
+                        <p>{{'about_preferences_content_item4_header_p' | translate}}</p>
                     </div>
                     <div class="item-content" [appAnimation]="2">
                         <figure class="snip1585">
                             <img src="../../assets/img/hunter.jpeg" alt="sample70" />
                             <figcaption>
-                                <h3>TILSTack <span>hunter</span></h3>
+                                <h3>TILSTack <span>{{'about_preferences_content_item4_item-content_figure1_figcaption_h3' | translate}}</span></h3>
                             </figcaption>
                             <a href="https://twitter.com/israelTientcheu/status/1768388830246121650"></a>
                         </figure>
                         <figure class="snip1585">
                             <img src="../../assets/img/home.jpeg" alt="sample70" />
                             <figcaption>
-                                <h3>TILSTack <span>HOME</span></h3>
+                                <h3>TILSTack <span>{{'about_preferences_content_item4_item-content_figure2_figcaption_h3' | translate}}</span></h3>
                             </figcaption>
                             <a href="https://twitter.com/israelTientcheu/status/1709566647361589398"></a>
                         </figure>
                         <figure class="snip1585">
                             <img src="../../assets/img/me.jpeg" alt="sample70" />
                             <figcaption>
-                                <h3>TILSTack <span>DOGS</span></h3>
+                                <h3>TILSTack <span>{{'about_preferences_content_item4_item-content_figure3_figcaption_h3' | translate}}</span></h3>
                             </figcaption>
                             <a href="https://twitter.com/israelTientcheu/status/1660977267294588928"></a>
                         </figure>
                         <figure class="snip1585">
                             <img src="../../assets/img/sky.jpeg" alt="sample70" />
                             <figcaption>
-                                <h3>TILSTack <span>Home</span></h3>
+                                <h3>TILSTack <span>{{'about_preferences_content_item4_item-content_figure4_figcaption_h3' | translate}}</span></h3>
                             </figcaption>
                             <a href="https://twitter.com/israelTientcheu/status/1725035271467454467"></a>
                         </figure>                      
