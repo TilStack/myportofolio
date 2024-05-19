@@ -2,10 +2,10 @@
     <div class="container1">
         <div class="worktitle">
             <div class="title">
-                <h1>All my Quotes ?</h1>
+                <h1>{{'citation_container1_worktitle_title_h1' | translate}}</h1>
             </div>
             <p [appAnimation]="2">
-                I really like creating new philosophical ideas and thoughts. So I usually write down my thoughts so I don't forget them. Then browse my creations.
+                {{'citation_container1_worktitle_p1' | translate}}
             </p>
         </div>
         <div class="citations">
@@ -18,8 +18,17 @@
                 <div class="box-content" [appAnimation]="2">
                     <div class="box">
                         <img src="" alt="">
+                        <a href="/about">Leonel Kahameni</a>
+                        <span inert>{{'citation_container1_citations_content_box0_span' | translate}}</span>
+                        <div class="foot">
+                            <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
+                            <span class="date">19/05/2024</span>
+                        </div>
+                    </div> 
+                    <div class="box">
+                        <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>Je suis TILStack et TILStack c'est moi</span>
+                        <span inert>{{'citation_container1_citations_content_box1_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">01/01/2024</span>
@@ -28,7 +37,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1791446198827557137')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>Courtois les grands et tu deviendras grand. Soit frustré et tu auras à frustrer les autres. C'est ma philosophie.</span>
+                        <span inert>{{'citation_container1_citations_content_box2_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">17/05/2024</span>
@@ -37,7 +46,7 @@
                     <div class="box"  (click)="navigateTo('https://x.com/israelTientcheu/status/1788477352093090092')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>La conséquence corrige. Le conseil préviens.</span>
+                        <span inert>{{'citation_container1_citations_content_box3_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">09/05/2024</span>
@@ -46,7 +55,7 @@
                     <div class="box"  (click)="navigateTo('https://x.com/israelTientcheu/status/1787545416235393479')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>Le juge ne juge pas car il aime juger. Le juge juge car il est juste. Mais ou donc sont ses juges justes qui ne juge que pour la justice?</span>
+                        <span inert>{{'citation_container1_citations_content_box4_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">06/05/2024</span>
@@ -55,7 +64,7 @@
                     <div class="box"  (click)="navigateTo('https://x.com/israelTientcheu/status/1783619583347175877')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>Il est impossible de connaitre sa position dans le coeur d'autrui. Mais il est possible de la ressentir par les actes.</span>
+                        <span inert>{{'citation_container1_citations_content_box5_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">25/04/2024</span>
@@ -64,7 +73,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1783440365556580601')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>Apprecie le bonheur qui s'epanouit dans tout ce que tu as autour de toi.</span>
+                        <span inert>{{'citation_container1_citations_content_box6_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">25/04/2024</span>
@@ -73,7 +82,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1783440365556580601')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>L'arrogance précède la ruine et l'orgueil précède la chute. Mais l'humilité précède la gloire.</span>
+                        <span inert>{{'citation_container1_citations_content_box7_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">22/04/2024</span>
@@ -82,7 +91,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1791446198827557137')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>Toutes verités est bonne à dire.</span>
+                        <span inert>{{'citation_container1_citations_content_box8_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">15/02/2024</span>
@@ -91,7 +100,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1791446198827557137')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>N'attend pas d'etre heureux pour sourire. Sourit plutot pour etre heureux. Je souris pour rendre heureux.</span>
+                        <span inert>{{'citation_container1_citations_content_box9_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">28/03/2024</span>
@@ -100,7 +109,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1771899447435198503')">
                         <img src="" alt="">
                         <a href="#">Rev Minyem Phillipe</a>
-                        <span inert>Certaines relation n'ont pour vocation que de te diluer.</span>
+                        <span inert>{{'citation_container1_citations_content_box10_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">24/03/2024</span>
@@ -109,7 +118,7 @@
                     <div class="box" (click)="navigateTo('https://x.com/israelTientcheu/status/1763232242569015723')">
                         <img src="" alt="">
                         <a href="/about">TIL Stack</a>
-                        <span inert>L'experience est une lanterne qui n'éclaire que celui qui l'a porte.</span>
+                        <span inert>{{'citation_container1_citations_content_box11_span' | translate}}</span>
                         <div class="foot">
                             <div class="like"><fa-icon [icon]="faHeart"></fa-icon><div class="number">{{number}}</div></div>
                             <span class="date">19/02/2024</span>
