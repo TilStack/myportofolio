@@ -11,10 +11,7 @@
       </ul>
       <!-- <button class="button" (click)="toggleButton()" [ngClass]="{'activ':isToggle}" id="btn">
         <span></span>
-      </button>
-      <div class="toggle_button" (click)="toggleMenu()">
-        <fa-icon [icon]="isOpen ? faXmark :faBars"></fa-icon>
-      </div> -->
+      </button>-->     
       <div class="select-menu">
         <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
           <li class="nav-item">            
@@ -25,7 +22,9 @@
           </li>
         </ul>
       </div>
-      
+       <div class="toggle_button" (click)="toggleMenu()">
+        <fa-icon [icon]="isOpen ? faXmark :faBars"></fa-icon>
+      </div>
     </div> 
     
     <div class="dropdown_menu" [ngClass]="{'open':isOpen}">

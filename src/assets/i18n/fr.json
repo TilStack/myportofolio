@@ -4,5 +4,17 @@
     "Work":"Travaux",
     "Skills":"Competences",
     "Citations":"Citations",
-    "Contact":"Contactez-moi"
+    "Contact":"Contactez-moi",
+
+    "head_title": "🌍 Bonjour le monde ! 🌍",
+    "intro_0":"Je suis",
+    "intro_1": "TIENTCHEU ISRAEL",
+    "intro_2_part1": "Également souvent appelé",
+    "intro_2_part2": "TILSTACK.",
+    "goal_1": "Mon objectif est de bien performer dans chaque projet mobile/web qui m'est confié.",
+    "goal_2": "Et bien sûr, m'améliorer en programmation",
+    "social_twitter": "Twitter",
+    "social_linkedin": "LinkedIn",
+    "social_github": "GitHub",
+    "download_cv": "Télécharger mon CV"
 }

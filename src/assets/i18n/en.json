@@ -4,5 +4,17 @@
     "Work":"Work",
     "Skills":"Skills",
     "Citations":"My Quotes",
-    "Contact Me":"Contact Me"
+    "Contact Me":"Contact Me",
+
+    "head_title": "🌍 Hello the world ! 🌍",
+    "intro_0":"I'm",
+    "intro_1": "TIENTCHEU ISRAEL",
+    "intro_2_part1": "Also often called",
+    "intro_2_part2": "TILSTACK.",
+    "goal_1": "My goal is to perform well in each mobile/web projects given to me.",
+    "goal_2": "And of course improve myself in programming",
+    "social_twitter": "Twitter",
+    "social_linkedin": "LinkedIn",
+    "social_github": "GitHub",
+    "download_cv": "Download my CV"
 }

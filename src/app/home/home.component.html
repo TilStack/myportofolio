@@ -1,13 +1,13 @@
 <div class="head">
         <div class="head_container" [appAnimation]="2" >
-            <h1 class="animate-bounce delay-150 duration-300 ...">🌍 Hello the world ! 🌍</h1>
-            <p class="debut">I'm <span (click)="goOnPageMe()">TIENTCHEU ISRAEL</span></p>
-            <p class="debut2">Also often called <span (click)="goOnPageMe()">TILSTACK.</span></p>
+            <h1 class="animate-bounce delay-150 duration-300 ...">{{'head_title' | translate}}</h1>
+            <p class="debut">{{'intro_0' | translate}}<span (click)="goOnPageMe()">{{'intro_1' | translate}}</span></p>
+            <p class="debut2">{{'intro_2_part1' | translate}}<span (click)="goOnPageMe()">{{'intro_2_part2' | translate}}</span></p>
         </div>
         <div class="line"></div>
         <div class="paragraph"[appAnimation]="3">
-            <p><span>My goal is to perform well in each mobile/web projects given to me.</span></p>
-            <p><span>And of course improve myself in programming</span></p>
+            <p><span>{{'goal_1' | translate}}</span></p>
+            <p><span>{{'goal_2' | translate}}</span></p>
         </div>  
         <div class="classe-social" [appAnimation]="4">
             <ul class="sci">
@@ -29,6 +29,6 @@
             </ul>
         </div>
         <div class="downoald" [appAnimation]="5">
-            <a href="mycv.pdf" download>Downoald my Cv <fa-icon [icon]="faArrowRight"></fa-icon></a>   
+            <a href="mycv.pdf" download="israelCv">{{'download_cv' | translate}}<fa-icon [icon]="faArrowRight"></fa-icon></a>   
         </div>    
 </div>
