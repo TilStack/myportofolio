@@ -129,7 +129,9 @@
     "contact_container1_contact_me_form_input2_placeholder": "israel01tientcheu@gmail.com !",
     "contact_container1_contact_me_form_label3": "Que voulez-vous me dire ?",
     "contact_container1_contact_me_form_textarea_placeholder": "Bonjour TIL Stack, puis-je aimer votre... !",
-    "contact_container1_contact_me_form_button": "Soumettre"
+    "contact_container1_contact_me_form_button": "Soumettre",
 
-    
+    "page_footer_text": "Codé et conçu par TILStack @Copyright 2024",
+    "page_footer_datetime": "HeureLocale : "
+
 }
