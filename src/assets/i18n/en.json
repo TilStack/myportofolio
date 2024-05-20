@@ -107,7 +107,29 @@
     "citation_container1_citations_content_box10_date": "24/03/2024",
     "citation_container1_citations_content_box11_a": "TIL Stack",
     "citation_container1_citations_content_box11_span": "L'experience est une lanterne qui n'éclaire que celui qui l'a porte.",
-    "citation_container1_citations_content_box11_date": "19/02/2024"
+    "citation_container1_citations_content_box11_date": "19/02/2024",
 
+    "contact_container1_objectif_title_h1": "How to contact me ?",
+    "contact_container1_objectif_p1": "I am open to any encouragement, contribution and/or discussion of mobile and web projects too. Contact me via email or from my linkedIn account.",
+    "contact_container1_media_email_h3": "Email",
+    "contact_container1_media_email_ul_li1_a": "israel01tientcheu@gmail.com",
+    "contact_container1_media_email_ul_li2_a": "GitHub",
+    "contact_container1_media_medias_h3": "Social medias !",
+    "contact_container1_media_medias_ul_li1_a": "X (Twitter)",
+    "contact_container1_media_medias_ul_li2_a": "LinkedIn",
+    "contact_container1_media_medias_ul_li3_a": "Facebook",
+    "contact_container1_media_medias_ul_li4_a": "Instagram",
+    "contact_container1_media_medias_ul_li5_a": "Medium",
+    "contact_container1_media_medias_ul_li6_a": "Spotify",
+    "contact_container1_media_medias_ul_li7_a": "My Bento",
+    "contact_container1_contact_me_h3": "Write me !",
+    "contact_container1_contact_me_form_label1": "What's your name?",
+    "contact_container1_contact_me_form_input1_placeholder": "Tientcheu Israel !",
+    "contact_container1_contact_me_form_label2": "What's your email?",
+    "contact_container1_contact_me_form_input2_placeholder": "israel01tientcheu@gmail.com !",
+    "contact_container1_contact_me_form_label3": "What do you want to tell me?",
+    "contact_container1_contact_me_form_textarea_placeholder": "Hello TIL Stack, can I like your... !",
+    "contact_container1_contact_me_form_button": "Submit"
 
+    
 }

@@ -2,17 +2,16 @@
   <div class="container1">
     <div class="objectif">
         <div class="title">
-            <h1>How to contact me ?</h1>
+            <h1>{{'contact_container1_objectif_title_h1' | translate}}</h1>
         </div>
-        <p [appAnimation]="2">I am open to any encouragement, contribution and/or discussion of mobile and web 
-            projects too. Contact me via email or from my linkedIn account.</p>
+        <p [appAnimation]="2">{{'contact_container1_objectif_p1' | translate}}</p>
     </div>
 
     <div class="media">
         <div class="contain">
             <!-- <h2>Contacts</h2> -->
             <div class="email">
-                <h3>Email</h3>
+                <h3>{{'contact_container1_media_email_h3' | translate}}</h3>
                 <div class="cont" [appAnimation]="2">
                     <ul>
                        <li> <a href="mailto:israeltientcheu@gmail.com"><fa-icon [icon]="faMailReply"></fa-icon>israel01tientcheu@gmail.com</a></li>
@@ -23,7 +22,7 @@
                 </div>
             </div>
             <div class="medias">
-                <h3>Social medias !</h3>
+                <h3>{{'contact_container1_media_medias_h3' | translate}}</h3>
                 <div class="cont" [appAnimation]="2">
                     <ul>                        
                         <li><a href="https://twitter.com/israelTientcheu"><i class="fa fa-twitter"></i>X (Twitter)</a></li>
@@ -40,21 +39,21 @@
     </div>
 
     <div class="contact-me">
-        <h3>Write me !</h3>
+        <h3>{{'contact_container1_contact_me_h3' | translate}}</h3>
         <form (ngSubmit)="onSubmit(form)" #form="ngForm">
             <span>
-                <label for="name">What's your name?</label>
+                <label for="name">{{'contact_container1_contact_me_form_label1' | translate}}</label>
             </span>
             <input [appAnimation]="2" placeholder="Tientcheu Israel !" type="text" ngModel name="name" #name="ngModel">
             <span>
-                <label for="email">What's your email?</label>
+                <label for="email">{{'contact_container1_contact_me_form_label2' | translate}}</label>
             </span>
             <input [appAnimation]="2" placeholder="israel01tientcheu@gmail.com !" type="email" ngModel name="email" #email="ngModel">
             <span>
-                <label for="message">What do you want to tell me?</label>
+                <label for="message">{{'contact_container1_contact_me_form_label3' | translate}}</label>
             </span>
             <textarea [appAnimation]="2" placeholder="Hello TIL Stack, can I like your... !" ngModel name="message" #message="ngModel"></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit">{{'contact_container1_contact_me_form_button' | translate}}</button>
         </form>
         
     </div>
