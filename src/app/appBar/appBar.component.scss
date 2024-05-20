@@ -113,26 +113,26 @@ header{
 
 
 /* DROPDOWN MENU*/
-.dropdown_menu{
+.dropdown_menu {
     display: none;
     position: absolute;
     right: 2rem;
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(15px);
+    background: #0f2364; /* Utilisez une couleur solide au lieu de backdrop-filter */
     border-radius: 10px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     align-items: flex-start;
+    z-index: 999; /* Assurez-vous que le dropdown est au-dessus de tous les autres éléments */
 }
 
-.dropdown_menu.open{
-    height: auto;   
+.dropdown_menu.open {
+    height: auto;
 }
 
-.dropdown_menu li{
+.dropdown_menu li {
     padding: 0.7rem;
     text-transform: uppercase;
     display: flex;
@@ -140,30 +140,37 @@ header{
     justify-content: center;
 }
 
+.dropdown_menu li a {
+    color: #fff;
+    font-size: 1.2rem;
+    position: relative;
+}
 
 .dropdown_menu li a:hover,
-.dropdown_menu li  a.active{
+.dropdown_menu li a.active {
     font-weight: bold;
     transition: ease-in-out 0.5s;
 }
 
-.dropdown_menu a:after{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: #000;
-  height: 1px; 
-  transition: all .3s;
+.dropdown_menu a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #000;
+    height: 1px;
+    transition: all .3s;
 }
-.dropdown_menu  a:hover:after,
-.dropdown_menu  a.active:after{
+
+.dropdown_menu a:hover:after,
+.dropdown_menu a.active:after {
     width: 50%;
 }
+
 
 
 /* SELECT MENU*/
@@ -171,10 +178,8 @@ header{
 .select-menu {
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
     background-color: #f8f9fa; /* Light background color */
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Style for the nav item to ensure proper spacing */
@@ -185,7 +190,7 @@ header{
 
 /* Style for the select element */
 .select-menu .form-select {
-    padding: 5px 10px;
+    padding: 8px;
     border: 1px solid #ced4da;
     border-radius: 5px;
     background-color: #fff; /* White background */
@@ -196,10 +201,8 @@ header{
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Style for the select element on focus */
-.select-menu .form-select:focus {
-    border-color: #80bdff;
-    box-shadow: 0 0 5px rgba(0,123,255,0.25);
+.select-menu .form-select:hover{
+    font-size: 1.2rem;
 }
 
 /* Style for the select element options */
