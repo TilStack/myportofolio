@@ -1,0 +1,18 @@
+@media screen and (max-width: 480px) {
+    .container1 {
+        padding: 10% 5%; /* Further reduce padding for very small screens */
+    }
+
+    .notfoundimage {
+        width: 80px; /* Smaller image size */
+    }
+
+    p {
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    button {
+        padding: 6px 12px; /* Smaller button padding */
+        font-size: 0.8em; /* Smaller font size */
+    }
+}

@@ -1,14 +1,55 @@
 .head {
     font-weight: 900;
-    height:100%;
-    border: none;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: linear-gradient(#0f246318 0.9px, transparent 0.9px), linear-gradient(to right, #0f246313 0.9px, rgba(248, 252, 252, 0.74) 0.9px);
     background-size: 18px 18px;
-}
-.container1{
-    padding-top: 8%;
-    padding-bottom: 8%;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: #f8fcfc; /* Light background color for better contrast */
 }
 
+.container1 {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    padding: 5% 10%;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.notfoundimage {
+    width: 200px; /* Fixed size for the image */
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+}
+
+p {
+    font-size: 1.2em; /* Slightly larger font size */
+    color: #333; /* Darker text color for better readability */
+    margin-bottom: 30px; /* Space below the paragraph */
+}
+
+button {
+    background-color: #0f2463; /* Matching the color palette */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #0c1e4d; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+button fa-icon {
+    margin-left: 10px; /* Space between text and icon */
+}
