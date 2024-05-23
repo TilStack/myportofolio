@@ -56,6 +56,12 @@ export function HttpLoaderFactory(http:HttpClient){
       }
     }
   ),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
     // provideFirebaseApp(()=>initializeApp(environment.firebase)),
     // provideFirestore(()=>getFirestore()),
     // ServiceWorkerModule.register('ngsw-worker.js', {
