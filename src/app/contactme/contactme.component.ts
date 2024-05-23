@@ -1,6 +1,4 @@
 import { Component, EventEmitter, OnInit,Output } from '@angular/core';
-import { FirestoreModule } from '@angular/fire/firestore';
-import { Firestore } from '@angular/fire/firestore/firebase';
 import { faRightFromBracket, faMailBulk} from "@fortawesome/free-solid-svg-icons";
 
 @Component({

@@ -18,8 +18,6 @@ import { MODE_STORAGE_SERVICE, ModeLocalStorageService } from 'src/styles/storag
 import { AnimationDirective } from './animations/animation.directive';
 import { CitationComponent } from './citation/citation.component';
 import { environment } from 'src/environments/environment';
-import { getFirestore,provideFirestore } from "@angular/fire/firestore";
-import { provideFirebaseApp,initializeApp } from "@angular/fire/app";
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -58,14 +56,14 @@ export function HttpLoaderFactory(http:HttpClient){
       }
     }
   ),
-    provideFirebaseApp(()=>initializeApp(environment.firebase)),
-    provideFirestore(()=>getFirestore()),
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      // Register the ServiceWorker as soon as the application is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000'
-    }),
+    // provideFirebaseApp(()=>initializeApp(environment.firebase)),
+    // provideFirestore(()=>getFirestore()),
+    // ServiceWorkerModule.register('ngsw-worker.js', {
+    //   enabled: !isDevMode(),
+    //   // Register the ServiceWorker as soon as the application is stable
+    //   // or after 30 seconds (whichever comes first).
+    //   registrationStrategy: 'registerWhenStable:30000'
+    // }),
   ],
   exports: [
     AnimationDirective,

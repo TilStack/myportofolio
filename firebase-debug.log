@@ -1,0 +1,32 @@
+[debug] [2024-05-23T11:05:01.475Z] ----------------------------------------------------------------------
+[debug] [2024-05-23T11:05:01.477Z] Command:       /snap/node/8649/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-05-23T11:05:01.477Z] CLI Version:   13.10.0
+[debug] [2024-05-23T11:05:01.478Z] Platform:      linux
+[debug] [2024-05-23T11:05:01.478Z] Node Version:  v20.13.1
+[debug] [2024-05-23T11:05:01.478Z] Time:          Thu May 23 2024 12:05:01 GMT+0100 (West Africa Standard Time)
+[debug] [2024-05-23T11:05:01.478Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-23T11:05:01.586Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-23T11:05:01.587Z] > authorizing via signed-in user (israel01tientcheu@gmail.com)
+[debug] [2024-05-23T11:05:01.587Z] [iam] checking project tilportofolio-4f6f3 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-23T11:05:01.589Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tilportofolio-4f6f3:testIamPermissions [none]
+[debug] [2024-05-23T11:05:01.590Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tilportofolio-4f6f3:testIamPermissions x-goog-quota-user=projects/tilportofolio-4f6f3
+[debug] [2024-05-23T11:05:01.590Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tilportofolio-4f6f3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-23T11:05:03.282Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tilportofolio-4f6f3:testIamPermissions 200
+[debug] [2024-05-23T11:05:03.282Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tilportofolio-4f6f3:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-23T11:05:03.284Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tilportofolio-4f6f3 [none]
+[debug] [2024-05-23T11:05:06.047Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tilportofolio-4f6f3 200
+[debug] [2024-05-23T11:05:06.047Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tilportofolio-4f6f3 {"projectId":"tilportofolio-4f6f3","projectNumber":"1082999188011","displayName":"tilportofolio","name":"projects/tilportofolio-4f6f3","resources":{"hostingSite":"tilportofolio-4f6f3","realtimeDatabaseInstance":"tilportofolio-4f6f3-default-rtdb"},"state":"ACTIVE","etag":"1_93d8d2a4-d7d6-4fb6-be75-d79287492bed"}
+[info] 
+[info] === Deploying to 'tilportofolio-4f6f3'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-05-23T11:05:06.071Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tilportofolio-4f6f3/versions [none]
+[debug] [2024-05-23T11:05:06.071Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tilportofolio-4f6f3/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-05-23T11:05:26.084Z] *** [apiv2] error from fetch(https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tilportofolio-4f6f3/versions, {"headers":{},"method":"POST","body":"{\"status\":\"CREATED\",\"labels\":{\"deployment-tool\":\"cli-firebase\"}}"}): FetchError: request to https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/tilportofolio-4f6f3/versions failed, reason: getaddrinfo EAI_AGAIN firebasehosting.googleapis.com
+[debug] [2024-05-23T11:05:31.097Z] Error: Timed out.
+    at Timeout._onTimeout (/usr/local/lib/node_modules/firebase-tools/lib/utils.js:267:49)
+    at listOnTimeout (node:internal/timers:573:17)
+    at process.processTimers (node:internal/timers:514:7)
+[error] 
+[error] Error: An unexpected error has occurred.
