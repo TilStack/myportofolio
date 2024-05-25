@@ -19,9 +19,23 @@ footer{
     padding: 20px;
     bottom: 3rem;
     right: 0;
+    z-index: 1000;
+    width: 65px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 65px;
     cursor: pointer;
   }
 
+  fa-icon{
+    font-size: 15px;
+  }
+
+  .scroll-to-top:hover{
+    width: 70px;
+    height: 70px;
+  }
 //Responsive Mobile
 @media screen and (min-width:350px) and (max-width:500px){
     .scroll-to-top{

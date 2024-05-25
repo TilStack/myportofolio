@@ -62,16 +62,16 @@
             font-weight: bold;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
-            background: rgb(224, 221, 221);
-            border: 0.5px solid black;
+            background: #0f2364;
             cursor: pointer;
+            color: #fff;
             padding: 12px;
 
         }
 
         fa-icon:hover{
             box-shadow: #0f246313;
-            color: orange;
+            color: #ee3608;
             font-weight: bold;
         }
     }

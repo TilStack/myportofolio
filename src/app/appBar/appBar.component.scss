@@ -49,7 +49,11 @@ header{
 .navbar .links a{
     position: relative;
 }
-.navbar .links a:hover,
+
+.navbar .links a:hover{
+    color: #0f2364;
+}
+
 .navbar .links  a.active{
     color: #0f2364;
     font-weight: bold;
