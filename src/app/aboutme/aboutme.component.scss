@@ -212,7 +212,7 @@
         gap: 15px;
       
         .box{
-          box-shadow: 0 4px 9px rgba(0, 0, 0, .2);
+          box-shadow: 0 3px 8px rgba(0, 0, 0, .2);
           border-radius: 10px;
           background: antiquewhite;
           padding: 30px 20px;
@@ -282,7 +282,7 @@
           }
       }
       .box:hover{
-          box-shadow: 0 8px 12px rgba(0, 0, 0, .3);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
           transform: scale(1.01);
           cursor: pointer;
       }
