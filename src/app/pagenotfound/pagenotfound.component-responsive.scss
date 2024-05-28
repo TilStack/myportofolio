@@ -1,6 +1,7 @@
 @media screen and (max-width: 480px) {
     .container1 {
         padding: 10% 5%; /* Further reduce padding for very small screens */
+        margin: 10px;
     }
 
     .notfoundimage {
@@ -18,9 +19,41 @@
 }
 
 @media screen and (min-width:320px) and (max-width:340px){
+    .container1 {
+        padding: 10% 5%; /* Further reduce padding for very small screens */
+        margin: 10px;
+    }
 
+    .notfoundimage {
+        width: 70px; /* Smaller image size */
+    }
+
+    p {
+        font-size: 0.8em; /* Smaller font size */
+    }
+
+    button {
+        padding: 5px 10px; /* Smaller button padding */
+        font-size: 0.8em; /* Smaller font size */
+    }
 }
 
 @media screen and (min-width:160px) and (max-width:300px){
+    .container1 {
+        padding: 10% 5%; /* Further reduce padding for very small screens */
+        margin: 10px;
+    }
 
+    .notfoundimage {
+        width: 60px; /* Smaller image size */
+    }
+
+    p {
+        font-size: 0.7em; /* Smaller font size */
+    }
+
+    button {
+        padding: 4px 9px; /* Smaller button padding */
+        font-size: 0.8em; /* Smaller font size */
+    }
 }

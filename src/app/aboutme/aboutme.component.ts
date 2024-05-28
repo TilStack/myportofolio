@@ -10,6 +10,7 @@ export class AboutmeComponent implements OnInit {
   faArrowRight=faArrowRight
   faHeart=faHeart
   number="2"
+  number2="1"
   constructor() { }
 
   ngOnInit() {

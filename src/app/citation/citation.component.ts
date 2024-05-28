@@ -10,6 +10,7 @@ export class CitationComponent implements OnInit{
   faSearch=faSearch
   faHeart=faHeart
   number="2"
+  number2="1"
   ngOnInit(): void {
     
   }
