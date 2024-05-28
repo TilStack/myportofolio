@@ -88,7 +88,7 @@
             .box{
                 box-shadow: 0 4px 9px rgba(0, 0, 0, .2);
                 border-radius: 10px;
-                background: rgb(241, 234, 223);
+                background: #fff;
                 padding: 30px 20px;
                 display: flex;
                 flex-direction: column;
@@ -100,9 +100,9 @@
                     padding-top: 5px;
                     padding-bottom: 5px;
                     padding-left: 5px;
-                    background-color: #0f2364;
+                    background-color: rgb(212, 210, 210);
                     border-radius: 5px;
-                    color: #fa7351;
+                    color: #0f2364;
                 }
 
                 span{
