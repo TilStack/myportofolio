@@ -1,34 +1,57 @@
 <div class="head">
-        <div class="head_container" [appAnimation]="2" >
-            <h1 class="animate-bounce delay-150 duration-300 ...">{{'head_title' | translate}}</h1>
-            <p class="debut">{{'intro_0' | translate}}<span (click)="goOnPageMe()">{{'intro_1' | translate}}</span></p>
-            <p class="debut2">{{'intro_2_part1' | translate}}<span (click)="goOnPageMe()">{{'intro_2_part2' | translate}}</span></p>
-        </div>
-        <div class="line"></div>
-        <div class="paragraph"[appAnimation]="3">
-            <p><span>{{'goal_1' | translate}}</span></p>
-            <p><span>{{'goal_2' | translate}}</span></p>
-        </div>  
-        <div class="classe-social" [appAnimation]="4">
-            <ul class="sci">
-                <!-- <li>
+  <div class="head_container" [appAnimation]="2">
+    <h1 class="animate-bounce delay-150 duration-300 ...">
+      {{ "head_title" | translate }}
+    </h1>
+    <p class="debut">
+      {{ "intro_0" | translate
+      }}<span (click)="goOnPageMe()">{{ "intro_1" | translate }}</span>
+    </p>
+    <p class="debut2">
+      {{ "intro_2_part1" | translate
+      }}<span (click)="goOnPageMe()">{{ "intro_2_part2" | translate }}</span>
+    </p>
+  </div>
+  <div class="line"></div>
+  <div class="paragraph" [appAnimation]="3">
+    <p>
+      <span>{{ "goal_1" | translate }}</span>
+    </p>
+    <p>
+      <span>{{ "goal_2" | translate }}</span>
+    </p>
+  </div>
+  <div class="classe-social" [appAnimation]="4">
+    <ul class="sci">
+      <!-- <li>
                     <a href="https://www.facebook.com/israel.tientcheu" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 </li> -->
-                <li>
-                    <a href="https://twitter.com/israelTientcheu" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                </li>
-                <li>
-                    <a href="www.linkedin.com/in/israel-tientcheu-12278b298" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                </li>   
-                <li>
-                    <a href="https://github.com/TilStack" class="github"><i class="fa fa-github" aria-hidden="true"></i></a>
-                </li>
-                <!-- <li>
+      <li>
+        <a href="https://twitter.com/israelTientcheu" class="twitter"
+          ><i class="fa fa-twitter" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="www.linkedin.com/in/israel-tientcheu-12278b298"
+          class="linkedin"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://github.com/TilStack" class="github"
+          ><i class="fa fa-github" aria-hidden="true"></i
+        ></a>
+      </li>
+      <!-- <li>
                     <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                 </li> -->
-            </ul>
-        </div>
-        <div class="downoald" [appAnimation]="5">
-            <a href="../../assets/ISRAEL TIENTCHEU.pdf" download="tilstackCv">{{'download_cv' | translate}}<fa-icon [icon]="faArrowRight"></fa-icon></a>   
-        </div>    
+    </ul>
+  </div>
+  <div class="downoald" [appAnimation]="5">
+    <a href="../../assets/ISRAEL TIENTCHEU.pdf" download="tilstackCv"
+      >{{ "download_cv" | translate }}
+      <!-- <fa-icon [icon]="faArrowRight"></fa-icon> -->
+    </a>
+  </div>
 </div>

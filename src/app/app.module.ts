@@ -1,81 +1,37 @@
-import { NgModule, isDevMode } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { AppBarComponent } from './appBar/appBar.component';
-import { SplashComponent } from './splash/splash.component';
-import { HomeComponent } from './home/home.component';
-import { FormsModule } from '@angular/forms';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { AboutmeComponent } from './aboutme/aboutme.component';
-import { WorksComponent } from './works/works.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ContactmeComponent } from './contactme/contactme.component';
-import { FooterComponent } from './footer/footer.component';
 import { ModeToggleService } from 'src/styles/mode.service';
 import {
   MODE_STORAGE_SERVICE,
   ModeLocalStorageService,
 } from 'src/styles/storage.service';
-import { AnimationDirective } from './animations/animation.directive';
-import { CitationComponent } from './citation/citation.component';
 import {
   HttpClient,
   provideHttpClient,
   withInterceptorsFromDi,
 } from '@angular/common/http';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { DatePipe } from '@angular/common';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 @NgModule({
-  declarations: [
-    AppComponent,
-    AppBarComponent,
-    SplashComponent,
-    HomeComponent,
-    PagenotfoundComponent,
-    AboutmeComponent,
-    WorksComponent,
-    SkillsComponent,
-    ContactmeComponent,
-    FooterComponent,
-    AnimationDirective,
-    CitationComponent,
-  ],
-  exports: [AnimationDirective],
-  bootstrap: [AppComponent],
-  imports: [
-    FormsModule,
-    BrowserModule,
-    FontAwesomeModule,
-    AppRoutingModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient],
-      },
-    }),
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      // Register the ServiceWorker as soon as the application is stable
-      // or after 30 seconds (whichever comes first).
-      registrationStrategy: 'registerWhenStable:30000',
-    }),
-  ],
+  imports: [AppComponent],
+  // Removed bootstrap array as AppComponent is standalone
+
   providers: [
+    DatePipe,
     ModeToggleService,
     {
       provide: MODE_STORAGE_SERVICE,
       useClass: ModeLocalStorageService,
     },
     HttpClient,
-    provideHttpClient(withInterceptorsFromDi()),
+    {
+      provide: HttpClient,
+      useFactory: () => provideHttpClient(withInterceptorsFromDi()),
+    },
   ],
 })
 export class AppModule {}

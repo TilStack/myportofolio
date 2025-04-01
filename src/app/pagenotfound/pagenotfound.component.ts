@@ -1,21 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-pagenotfound',
+  standalone: true,
+  imports: [],
   templateUrl: './pagenotfound.component.html',
-  styleUrls: ['./pagenotfound.component.scss','./pagenotfound.component-responsive.scss']
+  styleUrls: [
+    './pagenotfound.component.scss',
+    './pagenotfound.component-responsive.scss',
+  ],
 })
 export class PagenotfoundComponent implements OnInit {
-  faArrowRight=faArrowRight
-  constructor(private router: Router) { }
+  faArrowRight = faArrowRight;
+  constructor(private router: Router) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  goBack(){
+  goBack() {
     this.router.navigate(['/home']);
   }
 }

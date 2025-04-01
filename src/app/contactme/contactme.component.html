@@ -1,61 +1,126 @@
 <div class="head">
   <div class="container1">
     <div class="objectif">
-        <div class="title">
-            <h1>{{'contact_container1_objectif_title_h1' | translate}}</h1>
-        </div>
-        <p [appAnimation]="2">{{'contact_container1_objectif_p1' | translate}}</p>
+      <div class="title">
+        <h1>{{ "contact_container1_objectif_title_h1" | translate }}</h1>
+      </div>
+      <p [appAnimation]="2">
+        {{ "contact_container1_objectif_p1" | translate }}
+      </p>
     </div>
 
     <div class="media">
-        <div class="contain">
-            <!-- <h2>Contacts</h2> -->
-            <div class="email">
-                <h3>{{'contact_container1_media_email_h3' | translate}}</h3>
-                <div class="cont" [appAnimation]="2">
-                    <ul>
-                       <li> <a href="mailto:israeltientcheu@gmail.com"><fa-icon [icon]="faMailReply"></fa-icon>israel01tientcheu@gmail.com</a></li>
-                       <li>
-                            <a href="https://github.com/TilStack"><i class="fa fa-github"></i>GitHub</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="medias">
-                <h3>{{'contact_container1_media_medias_h3' | translate}}</h3>
-                <div class="cont" [appAnimation]="2">
-                    <ul>                        
-                        <li><a href="https://twitter.com/israelTientcheu"><i class="fa fa-twitter"></i>X (Twitter)</a></li>
-                        <li><a href="www.linkedin.com/in/israel-tientcheu-12278b298"><i class="fa fa-linkedin"></i>linkedIn</a></li>
-                        <li><a href="https://www.facebook.com/israel.tientcheu"><i class="fa fa-facebook"></i>Facebook</a></li>
-                        <li><a href="https://www.facebook.com/israel.tientcheu"><i class="fa fa-instagram"></i>Instagram</a></li>
-                        <li><a href="https://medium.com/@TIL_Stack"><i class="fa fa-medium"></i>Medium</a></li>
-                        <li><a href="https://open.spotify.com/user/31eigczeqw3ldx2rmqick5v2hnje"><i class="fa fa-spotify"></i>Spotify</a></li>
-                        <li><a href="https://bento.me/tilstack"><i class="fa fa-bento"></i>My Bento</a></li>
-                    </ul>                                                      
-                </div>
-            </div>          
+      <div class="contain">
+        <!-- <h2>Contacts</h2> -->
+        <div class="email">
+          <h3>{{ "contact_container1_media_email_h3" | translate }}</h3>
+          <div class="cont" [appAnimation]="2">
+            <ul>
+              <li>
+                <a href="mailto:israeltientcheu@gmail.com">
+                  <!-- <fa-icon [icon]="faMailReply"></fa-icon> -->
+                  israel01tientcheugmail.com</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/TilStack"
+                  ><i class="fa fa-github"></i>GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <div class="medias">
+          <h3>{{ "contact_container1_media_medias_h3" | translate }}</h3>
+          <div class="cont" [appAnimation]="2">
+            <ul>
+              <li>
+                <a href="https://twitter.com/israelTientcheu"
+                  ><i class="fa fa-twitter"></i>X (Twitter)</a
+                >
+              </li>
+              <li>
+                <a href="www.linkedin.com/in/israel-tientcheu-12278b298"
+                  ><i class="fa fa-linkedin"></i>linkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/israel.tientcheu"
+                  ><i class="fa fa-facebook"></i>Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/israel.tientcheu"
+                  ><i class="fa fa-instagram"></i>Instagram</a
+                >
+              </li>
+              <li>
+                <a href="https://medium.com/@TIL_Stack"
+                  ><i class="fa fa-medium"></i>Medium</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://open.spotify.com/user/31eigczeqw3ldx2rmqick5v2hnje"
+                  ><i class="fa fa-spotify"></i>Spotify</a
+                >
+              </li>
+              <li>
+                <a href="https://bento.me/tilstack"
+                  ><i class="fa fa-bento"></i>My Bento</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="contact-me">
-        <h3>{{'contact_container1_contact_me_h3' | translate}}</h3>
-        <form (ngSubmit)="onSubmit(form)" #form="ngForm">
-            <span>
-                <label for="name">{{'contact_container1_contact_me_form_label1' | translate}}</label>
-            </span>
-            <input [appAnimation]="2" placeholder="Tientcheu Israel !" type="text" ngModel name="name" #name="ngModel">
-            <span>
-                <label for="email">{{'contact_container1_contact_me_form_label2' | translate}}</label>
-            </span>
-            <input [appAnimation]="2" placeholder="israel01tientcheu@gmail.com !" type="email" ngModel name="email" #email="ngModel">
-            <span>
-                <label for="message">{{'contact_container1_contact_me_form_label3' | translate}}</label>
-            </span>
-            <textarea [appAnimation]="2" placeholder="Hello TIL Stack, can I like your... !" ngModel name="message" #message="ngModel"></textarea>
-            <button type="submit">{{'contact_container1_contact_me_form_button' | translate}}</button>
-        </form>
-        
+      <h3>{{ "contact_container1_contact_me_h3" | translate }}</h3>
+      <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+        <span>
+          <label for="name">{{
+            "contact_container1_contact_me_form_label1" | translate
+          }}</label>
+        </span>
+        <input
+          [appAnimation]="2"
+          placeholder="Tientcheu Israel !"
+          type="text"
+          ngModel
+          name="name"
+          #name="ngModel"
+        />
+        <span>
+          <label for="email">{{
+            "contact_container1_contact_me_form_label2" | translate
+          }}</label>
+        </span>
+        <input
+          [appAnimation]="2"
+          placeholder="israel01tientcheu@gmail.com !"
+          type="email"
+          ngModel
+          name="email"
+          #email="ngModel"
+        />
+        <span>
+          <label for="message">{{
+            "contact_container1_contact_me_form_label3" | translate
+          }}</label>
+        </span>
+        <textarea
+          [appAnimation]="2"
+          placeholder="Hello TIL Stack, can I like your... !"
+          ngModel
+          name="message"
+          #message="ngModel"
+        ></textarea>
+        <button type="submit">
+          {{ "contact_container1_contact_me_form_button" | translate }}
+        </button>
+      </form>
     </div>
   </div>
 </div>
