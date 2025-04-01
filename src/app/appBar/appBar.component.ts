@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import {
   faBars,
@@ -6,14 +6,13 @@ import {
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import { ModeToggleService } from 'src/styles/mode.service';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { CommonModule } from '@angular/common';
+import { TranslateService } from '@ngx-translate/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-appBar',
-
   standalone: true,
-  imports: [TranslateModule, CommonModule],
+  imports: [BrowserModule],
   templateUrl: './appBar.component.html',
   styleUrls: ['./appBar.component.scss', './app-bar-responsive.component.scss'],
 })
@@ -28,9 +27,9 @@ export class AppBarComponent implements OnInit {
   activeLink: string = '';
   lang: string = '';
   constructor(
-    private router: Router,
+    @Inject(Router) private router: Router,
     private modeToggleService: ModeToggleService,
-    private translateService: TranslateService
+    @Inject(TranslateService) private translateService: TranslateService
   ) {}
 
   toggleSearchView() {
