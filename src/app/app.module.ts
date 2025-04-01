@@ -14,58 +14,68 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { FooterComponent } from './footer/footer.component';
 import { ModeToggleService } from 'src/styles/mode.service';
-import { MODE_STORAGE_SERVICE, ModeLocalStorageService } from 'src/styles/storage.service';
+import {
+  MODE_STORAGE_SERVICE,
+  ModeLocalStorageService,
+} from 'src/styles/storage.service';
 import { AnimationDirective } from './animations/animation.directive';
 import { CitationComponent } from './citation/citation.component';
-import { environment } from 'src/environments/environment';
-import { HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import {
+  HttpClient,
+  provideHttpClient,
+  withInterceptorsFromDi,
+} from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { ServiceWorkerModule } from '@angular/service-worker';
 
-export function HttpLoaderFactory(http:HttpClient){
+export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
-@NgModule({ declarations: [
-        AppComponent,
-        AppBarComponent,
-        SplashComponent,
-        HomeComponent,
-        PagenotfoundComponent,
-        AboutmeComponent,
-        WorksComponent,
-        SkillsComponent,
-        ContactmeComponent,
-        FooterComponent,
-        AnimationDirective,
-        CitationComponent
-    ],
-    exports: [
-        AnimationDirective,
-    ],
-    bootstrap: [AppComponent], imports: [FormsModule,
-        BrowserModule,
-        FontAwesomeModule,
-        AppRoutingModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        }),
-        ServiceWorkerModule.register('ngsw-worker.js', {
-            enabled: !isDevMode(),
-            // Register the ServiceWorker as soon as the application is stable
-            // or after 30 seconds (whichever comes first).
-            registrationStrategy: 'registerWhenStable:30000'
-        })], providers: [
-        ModeToggleService,
-        {
-            provide: MODE_STORAGE_SERVICE,
-            useClass: ModeLocalStorageService,
-        },
-        HttpClient,
-        provideHttpClient(withInterceptorsFromDi()),
-    ] })
-export class AppModule { }
+@NgModule({
+  declarations: [
+    AppComponent,
+    AppBarComponent,
+    SplashComponent,
+    HomeComponent,
+    PagenotfoundComponent,
+    AboutmeComponent,
+    WorksComponent,
+    SkillsComponent,
+    ContactmeComponent,
+    FooterComponent,
+    AnimationDirective,
+    CitationComponent,
+  ],
+  exports: [AnimationDirective],
+  bootstrap: [AppComponent],
+  imports: [
+    FormsModule,
+    BrowserModule,
+    FontAwesomeModule,
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000',
+    }),
+  ],
+  providers: [
+    ModeToggleService,
+    {
+      provide: MODE_STORAGE_SERVICE,
+      useClass: ModeLocalStorageService,
+    },
+    HttpClient,
+    provideHttpClient(withInterceptorsFromDi()),
+  ],
+})
+export class AppModule {}
