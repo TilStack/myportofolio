@@ -1,7 +1,5 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { PagenotfoundComponent } from './pagenotfound.component';
 
@@ -9,11 +7,10 @@ describe('PagenotfoundComponent', () => {
   let component: PagenotfoundComponent;
   let fixture: ComponentFixture<PagenotfoundComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ PagenotfoundComponent ]
-    })
-    .compileComponents();
+      declarations: [PagenotfoundComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
