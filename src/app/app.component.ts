@@ -6,11 +6,21 @@ import { ViewportScroller } from '@angular/common';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterOutlet } from '@angular/router';
+import { AppBarComponent } from './appBar/appBar.component';
+import { FooterComponent } from './footer/footer.component';
+import { SplashComponent } from './splash/splash.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [BrowserModule],
+  imports: [
+    BrowserModule,
+    RouterOutlet,
+    AppBarComponent,
+    FooterComponent,
+    SplashComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })

@@ -7,7 +7,7 @@ import { AnimationDirective } from '../animations/animation.directive';
   selector: 'app-citation',
 
   standalone: true,
-  imports: [TranslateModule,AnimationDirective],
+  imports: [TranslateModule, AnimationDirective],
   templateUrl: './citation.component.html',
   styleUrls: [
     './citation.component.scss',

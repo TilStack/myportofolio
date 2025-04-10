@@ -6,13 +6,13 @@ import {
   faChevronDown,
 } from '@fortawesome/free-solid-svg-icons';
 import { ModeToggleService } from 'src/styles/mode.service';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-appBar',
   standalone: true,
-  imports: [BrowserModule],
+  imports: [BrowserModule, TranslateModule],
   templateUrl: './appBar.component.html',
   styleUrls: ['./appBar.component.scss', './app-bar-responsive.component.scss'],
 })

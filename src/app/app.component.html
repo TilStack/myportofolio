@@ -1,15 +1,16 @@
 <app-splash
-[animationType]=animationTyp
-[duration]="3"
-[animationDuration]="3">
+  [animationType]="animationTyp"
+  [duration]="3"
+  [animationDuration]="3"
+>
 </app-splash>
 <header>
   <app-appBar></app-appBar>
 </header>
 <section class="router-outlet">
   <router-outlet></router-outlet>
-  <div (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0" >
-    <fa-icon [icon]="faArrowUp" style="color: white; font-weight: bold;"></fa-icon> 
+  <div (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0">
+    <!-- <fa-icon [icon]="faArrowUp" style="color: white; font-weight: bold;"></fa-icon>  -->
   </div>
 </section>
 <footer>
