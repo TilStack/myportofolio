@@ -1,37 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TilStack | Portofolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TILStack - Découvrez mon portofolio">
-  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
-  <link rel="icon" type="image/x-icon" href="assets/png/tilwhite.png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-  <link rel="manifest" href="manifest.webmanifest">
-  <meta name="theme-color" content="#0f2364">
-</head>
-<body class="font-[Poppins]">
-  <app-root></app-root>
-  <div class="cursor"></div>
-  <div class="cursor2"></div>
-  <script>
-    var cursor = document.querySelector(".cursor");
-    var cursor2 = document.querySelector(".cursor2");
-    document.addEventListener("mousemove",function(e){
-      console.log(e);
-      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-    });
-  </script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K9ZP58PXRR"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <title>TilStack | Portofolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="TILStack - Découvrez mon portofolio" />
+    <link rel="icon" type="image/x-icon" href="assets/png/tilwhite.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#0f2364" />
+  </head>
+  <body class="font-[Poppins]">
+    <app-root></app-root>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script nonce="123456">
+      var cursor = document.querySelector(".cursor");
+      var cursor2 = document.querySelector(".cursor2");
+      document.addEventListener("mousemove", function (e) {
+        console.log(e);
+        cursor.style.cssText = cursor2.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-K9ZP58PXRR"
+    ></script>
+    <script nonce="123456">
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-K9ZP58PXRR');
-</script>
-<noscript>Please enable JavaScript to continue using this application.</noscript>
-</body>
+      gtag("config", "G-K9ZP58PXRR");
+    </script>
+    <noscript
+      >Please enable JavaScript to continue using this application.</noscript
+    >
+  </body>
 </html>
