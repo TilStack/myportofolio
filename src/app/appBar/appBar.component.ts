@@ -7,12 +7,12 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { ModeToggleService } from 'src/styles/mode.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-appBar',
   standalone: true,
-  imports: [BrowserModule, TranslateModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './appBar.component.html',
   styleUrls: ['./appBar.component.scss', './app-bar-responsive.component.scss'],
 })

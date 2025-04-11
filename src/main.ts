@@ -10,9 +10,11 @@ import {
   MODE_STORAGE_SERVICE,
   ModeLocalStorageService,
 } from 'src/styles/storage.service';
-
+import { TranslateService, TranslateStore } from '@ngx-translate/core';
 bootstrapApplication(AppComponent, {
   providers: [
+    TranslateService,
+    TranslateStore,
     ModeToggleService,
     {
       provide: MODE_STORAGE_SERVICE,

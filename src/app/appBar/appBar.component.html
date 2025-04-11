@@ -62,6 +62,12 @@
       </ul>
     </div>
     <div class="toggle_button" (click)="toggleMenu()">
+      @if(isOpen){
+      <i class="pi pi-angle-double-down" style="font-size: 2.5rem"></i>
+      }@else if (!isOpen) {
+      <i class="pi pi-bars" style="font-size: 2.5rem"></i>
+      }
+
       <!-- <fa-icon [icon]="isOpen ? faXmark :faBars"></fa-icon> -->
     </div>
   </div>

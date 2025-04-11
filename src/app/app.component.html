@@ -9,9 +9,12 @@
 </header>
 <section class="router-outlet">
   <router-outlet></router-outlet>
-  <div (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0">
+  @if(pageYoffset>0){
+  <div (click)="scrollToTop()" class="scroll-to-top">
+    <i class="pi pi-angle-up" style="font-size: 2.5rem"></i>
     <!-- <fa-icon [icon]="faArrowUp" style="color: white; font-weight: bold;"></fa-icon>  -->
   </div>
+  }
 </section>
 <footer>
   <app-footer></app-footer>

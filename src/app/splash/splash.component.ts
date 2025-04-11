@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SplashAnimationType } from './type';
-import { NgStyle } from '@angular/common';
+import { CommonModule, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-splash',
   standalone: true,
-  imports: [NgStyle],
+  imports: [NgStyle, CommonModule],
   templateUrl: './splash.component.html',
   styleUrls: ['./splash.component.scss', 'splash-responsive.component.scss'],
 })

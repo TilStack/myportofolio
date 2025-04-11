@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import "./styles/variables";
+@import "primeicons/primeicons.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,58 +17,55 @@
 //     transition: .1s;
 // }
 
-.cursor2{
-    position: fixed;
-    width: 9px;
-    height: 9px;
-    background-color:#1f1e1e ;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transition: 0.13s;
+.cursor2 {
+  position: fixed;
+  width: 9px;
+  height: 9px;
+  background-color: #1f1e1e;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.13s;
 }
 
 /*Animations section*/
 
-
-
-[class*="reveal-"]{
-    opacity: 0;
-    transform: translateY(-30px);
+[class*="reveal-"] {
+  opacity: 0;
+  transform: translateY(-30px);
 }
 
-.reveal-visible{
-    opacity: 1;
-    transform: rotateY(0);
-    transition: 1s cubic-bezier(.5, 0, 0, 1);
+.reveal-visible {
+  opacity: 1;
+  transform: rotateY(0);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
-.reveal-2{
-    transition-delay: .1s;
+.reveal-2 {
+  transition-delay: 0.1s;
 }
 
-.reveal-3{
-    transition-delay: .2s;
+.reveal-3 {
+  transition-delay: 0.2s;
 }
 
-.reveal-4{
-    transition-delay: .3s;
+.reveal-4 {
+  transition-delay: 0.3s;
 }
 
 @keyframes cursorAnim {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(.7);
-    }
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
 }
 body.dark {
-    @include darken();
-  }
-body.light {
-    @include lighten();
+  @include darken();
 }
-  
+body.light {
+  @include lighten();
+}

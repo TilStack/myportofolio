@@ -2,10 +2,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { SplashAnimationType } from './splash/type';
 import { Mode } from 'src/styles/mode.model';
 import { ModeToggleService } from 'src/styles/mode.service';
-import { ViewportScroller } from '@angular/common';
+import { CommonModule, ViewportScroller } from '@angular/common';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { TranslateService } from '@ngx-translate/core';
-import { BrowserModule } from '@angular/platform-browser';
 import { RouterOutlet } from '@angular/router';
 import { AppBarComponent } from './appBar/appBar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -15,7 +14,7 @@ import { SplashComponent } from './splash/splash.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    BrowserModule,
+    CommonModule,
     RouterOutlet,
     AppBarComponent,
     FooterComponent,

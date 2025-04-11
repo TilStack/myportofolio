@@ -1,30 +1,32 @@
-
 <div class="head">
-    <div class="container1">
-        <div class="whoamI">
-            <div class="title"  [appAnimation]="2">
-                <h1>{{'about_container1_whoamI_title_h1' | translate}}</h1>
-            </div>
-            <p  [appAnimation]="2" >{{'about_container1_whoamI_p1' | translate}}</p>
-        </div> 
-        <div class="picture">
-            <div class="contain">
-                <div class="rule"  [appAnimation]="3" >
-                    <p>{{'about_container1_picture_rule_p' | translate}}
-                        <!-- <fa-icon [icon]="faArrowRight"></fa-icon> -->
-                    </p>
-                </div>
-                <figure class="snip1504"  [appAnimation]="3" >
-                    <img [appAnimation]="2" src="../../assets/img/2.png" alt="tilstack">
-                    <figcaption>
-                        <h3>TIENTCHEU ISRAEL</h3>
-                        <h5>Mobile developer</h5>
-                    </figcaption>
-                    <a href="#"></a>
-                </figure>
-            </div>         
-        </div> 
-        <!-- <div class="language">
+  <div class="container1">
+    <div class="whoamI">
+      <div class="title" [appAnimation]="2">
+        <h1>{{ "about_container1_whoamI_title_h1" | translate }}</h1>
+      </div>
+      <p [appAnimation]="2">{{ "about_container1_whoamI_p1" | translate }}</p>
+    </div>
+    <div class="picture">
+      <div class="contain">
+        <div class="rule" [appAnimation]="3">
+          <p>
+            {{ "about_container1_picture_rule_p" | translate }}
+
+            <i class="pi pi-arrow-right" style="font-size: 2.5rem"></i>
+            <!-- <fa-icon [icon]="faArrowRight"></fa-icon> -->
+          </p>
+        </div>
+        <figure class="snip1504" [appAnimation]="3">
+          <img [appAnimation]="2" src="../../assets/img/2.png" alt="tilstack" />
+          <figcaption>
+            <h3>TIENTCHEU ISRAEL</h3>
+            <h5>Mobile developer</h5>
+          </figcaption>
+          <a href="#"></a>
+        </figure>
+      </div>
+    </div>
+    <!-- <div class="language">
             <div class="title"  [appAnimation]="2" >
                 <h1>My Languages ?</h1>
             </div>
@@ -39,219 +41,310 @@
                 </div>
             </div>
         </div> -->
-        <div class="setup">
-            <div class="title"  [appAnimation]="2" >  
-                <p>{{'about_setup_title_p' | translate}}</p>            
-            </div>
-            <div class="contain">
-                <div class="slider"[appAnimation]="2">
-                    <img src="../../assets/png/other.jpg" alt="Ordinateur">
-                </div>
-                <div class="caracteristiques">
-                    <div class="item"[appAnimation]="2">
-                        <p class="title">{{'about_setup_caracteristiques_item1_title_p' | translate}}</p>
-                        <div class="content-item">
-                            <span>Dell inc.Latitude 5490</span>
-                            <span>16Go RAM, 500G ROM</span>
-                            <span>Intel Core i5-8350 CPU 1.70Ghz $ 8</span>
-                            <span>Ubuntu,Window (Dual Boot)</span>
-                        </div>                      
-                    </div>
-                    <div class="item"[appAnimation]="2">
-                        <p class="title">{{'about_setup_caracteristiques_item2_title_p' | translate}}</p>
-                        <div class="content-item">
-                            <span>Tecno Camon 16 S</span>
-                            <span>Android 10</span>
-                            <span>128GO ROM, 4GO RAM</span>
-                        </div>                      
-                    </div>
-                    <div class="item"[appAnimation]="2">
-                        <p class="title">- Casque Oraimo </p>
-                        <div class="content-item">                           
-                        </div>                      
-                    </div>
-                    <div class="item"[appAnimation]="2">
-                        <p class="title">- Navigators</p>
-                        <div class="content-item">
-                            <span>Google</span>
-                            <span>Opera</span>
-                        </div>                    
-                    </div>
-                    <div class="item"[appAnimation]="2">
-                        <p class="title">- Apps</p>
-                        <div class="content-item">
-                            <span>ChatGpt and Gemini (IA)</span>
-                            <span>VsCode , Android Studio</span>
-                            <!-- <span>Spotify , Netflix</span> -->
-                        </div>                      
-                    </div>
-                </div>
-            </div>
-        </div>            
-        <div class="preferences">  
-            <div class="title" [appAnimation]="2">
-                <h1>{{'about_preferences_title_h1' | translate}} </h1>
-            </div>   
-            <div class="content">
-                <div class="item">
-                    <div class="header" [appAnimation]="2">
-                        <p>{{'about_preferences_content_item1_header_p' | translate}}</p>
-                    </div>
-                    <div class="item-content" [appAnimation]="2">
-                        <div class="box">
-                            <img src="" alt="">
-                            <a href="/about">TIL Stack</a>
-                            <span inert>{{'about_preferences_content_item1_item-content_box_span1' | translate}}</span>
-                            <div class="foot">
-                                <div class="like">
-                                    <!-- <fa-icon [icon]="faHeart"></fa-icon> -->
-                                    <div class="number">{{number}}</div></div>
-                                <span class="date">01/01/2024</span>
-                            </div>
-                        </div> 
-                        <div class="box"(click)="navigateTo('https://x.com/israelTientcheu/status/1788477352093090092')">
-                            <img src="" alt="">
-                            <a href="/about">TIL Stack</a>
-                            <span inert>{{'about_preferences_content_item1_item-content_box_span2' | translate}}</span>
-                            <div class="foot">
-                                <div class="like">
-                                    <!-- <fa-icon [icon]="faHeart"></fa-icon> -->
-                                    <div class="number">{{number}}</div></div>
-                                <span class="date">09/05/2024</span>
-                            </div>
-                        </div> 
-                        <div class="box"(click)="navigateTo('https://x.com/israelTientcheu/status/1783440365556580601')">
-                            <img src="" alt="">
-                            <a href="/about">TIL Stack</a>
-                            <span inert>{{'about_preferences_content_item1_item-content_box_span3' | translate}}</span>
-                            <div class="foot">
-                                <div class="like">
-                                    <!-- <fa-icon [icon]="faHeart"></fa-icon> -->
-                                    <div class="number">{{number2}}</div></div>
-                                <span class="date">25/04/2024</span>
-                            </div>
-                        </div>                         
-                    </div>
-                    <a href="/citations">See more!</a>
-                </div>                
-                <div class="item">
-                    <div class="header" [appAnimation]="2" >
-                        <p>{{'about_preferences_content_item2_header_p' | translate}}</p>
-                    </div>
-                    <div class="item-content" [appAnimation]="2">
-                        <div class="card-book" >
-                            <p>- Title: <span>Chronique d'une Jeunesse Africaine</span></p>
-                            <p>- Autor: <span>Abel Kam</span></p>
-                            <p>- Status: <span class="status">In Progress...</span></p>
-                        </div>
-
-                        <div class="card-book" >
-                            <p>- Title: <span>La magie de voir Grand</span></p>
-                            <p>- Autor: <span>David J. Schwartz</span></p>
-                            <p>- Status: <span class="status">Finished</span></p>
-                        </div>
-
-                        <div class="card-book">
-                            <p>- Title: <span>L'art d'avoir toujours raison</span></p>
-                            <p>- Autor: <span>Arthur Schopenhauer</span></p>
-                            <p>- Status: <span class="status">In Progress...</span></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="header" [appAnimation]="2">
-                        <p>{{'about_preferences_content_item3_header_p' | translate}}</p>
-                    </div>
-                    <div class="item-content" [appAnimation]="2">                      
-                        <div class="card-article">
-                            <div class="link1">
-                                <a href="https://zerofiltre.tech/articles/282">https://zerofiltre.tech/articles/282</a>
-                            </div>
-                            <div class="content-article">
-                                <div class="right1">
-                                    <div class="site">Zerofiltre.tech</div>
-                                    <div class="titre">
-                                        {{'about_preferences_content_item3_item-content_card-article1_content-article_right1_titre' | translate}}
-                                    </div>
-                                    <div class="desc">
-                                        {{'about_preferences_content_item3_item-content_card-article1_content-article_right1_desc' | translate}}
-                                    </div>
-                                </div>
-                                <div class="left1">
-                                    <img src="https://ik.imagekit.io/lfegvix1p/tr:w-1200,ar-auto,dpr-auto,di-Article_default_oz_Yb-VZj.svg/toast_flutter_2024.png" alt="toast">
-                                </div>
-                            </div>
-                        </div>         
-                        <div class="card-article">
-                            <div class="link1">
-                                <a href="https://zerofiltre.tech/articles/232">https://zerofiltre.tech/articles/232</a>
-                            </div>
-                            <div class="content-article">
-                                <div class="right1">
-                                    <div class="site">Zerofiltre.tech</div>
-                                    <div class="titre">
-                                        {{'about_preferences_content_item3_item-content_card-article2_content-article_right1_titre' | translate}}
-                                    </div>
-                                    <div class="desc">
-                                        {{'about_preferences_content_item3_item-content_card-article2_content-article_right1_desc' | translate}}
-                                    </div>
-                                </div>
-                                <div class="left1">
-                                    <img src="https://ik.imagekit.io/lfegvix1p/tr:w-1200,ar-auto,dpr-auto,di-Article_default_oz_Yb-VZj.svg/Screenshot%202023-05-12%20100633.png" alt="toast">
-                                </div>
-                            </div>
-                        </div>                    
-                    </div>
-                    <a href="https://zerofiltre.tech/articles">See more!</a>
-                </div>
-                <div class="item">
-                    <div class="header" [appAnimation]="2">
-                        <p>{{ 'about_preferences_content_item4_header_p' | translate }}</p>
-                    </div>
-                    <div class="item-content" [appAnimation]="2">
-                        <div class="scroll-container">
-                            <figure class="snip1585">
-                                <img src="../../assets/img/hunter.jpeg" alt="sample70" />
-                                <figcaption>
-                                    <h3>TILSTack <span>{{ 'about_preferences_content_item4_item-content_figure1_figcaption_h3' | translate }}</span></h3>
-                                </figcaption>
-                                <a href="https://twitter.com/israelTientcheu/status/1768388830246121650"></a>
-                            </figure>
-                            <figure class="snip1585">
-                                <img src="../../assets/img/home.jpeg" alt="sample70" />
-                                <figcaption>
-                                    <h3>TILSTack <span>{{ 'about_preferences_content_item4_item-content_figure2_figcaption_h3' | translate }}</span></h3>
-                                </figcaption>
-                                <a href="https://twitter.com/israelTientcheu/status/1709566647361589398"></a>
-                            </figure>
-                            <figure class="snip1585">
-                                <img src="../../assets/img/me.jpeg" alt="sample70" />
-                                <figcaption>
-                                    <h3>TILSTack <span>{{ 'about_preferences_content_item4_item-content_figure3_figcaption_h3' | translate }}</span></h3>
-                                </figcaption>
-                                <a href="https://twitter.com/israelTientcheu/status/1660977267294588928"></a>
-                            </figure>
-                            <figure class="snip1585">
-                                <img src="../../assets/img/sky.jpeg" alt="sample70" />
-                                <figcaption>
-                                    <h3>TILSTack <span>{{ 'about_preferences_content_item4_item-content_figure4_figcaption_h3' | translate }}</span></h3>
-                                </figcaption>
-                                <a href="https://twitter.com/israelTientcheu/status/1725035271467454467"></a>
-                            </figure>
-                            <figure class="snip1585">
-                                <img src="../../assets/img/sky.jpeg" alt="sample70" />
-                                <figcaption>
-                                    <h3>TILSTack <span>{{ 'about_preferences_content_item4_item-content_figure4_figcaption_h3' | translate }}</span></h3>
-                                </figcaption>
-                                <a href="https://twitter.com/israelTientcheu/status/1725035271467454467"></a>
-                            </figure>
-                        </div>
-                    </div>
-                </div>                
-            </div>        
+    <div class="setup">
+      <div class="title" [appAnimation]="2">
+        <p>{{ "about_setup_title_p" | translate }}</p>
+      </div>
+      <div class="contain">
+        <div class="slider" [appAnimation]="2">
+          <img src="../../assets/png/other.jpg" alt="Ordinateur" />
         </div>
+        <div class="caracteristiques">
+          <div class="item" [appAnimation]="2">
+            <p class="title">
+              {{ "about_setup_caracteristiques_item1_title_p" | translate }}
+            </p>
+            <div class="content-item">
+              <span>Dell inc.Latitude 5490</span>
+              <span>16Go RAM, 500G ROM</span>
+              <span>Intel Core i5-8350 CPU 1.70Ghz $ 8</span>
+              <span>Ubuntu,Window (Dual Boot)</span>
+            </div>
+          </div>
+          <div class="item" [appAnimation]="2">
+            <p class="title">
+              {{ "about_setup_caracteristiques_item2_title_p" | translate }}
+            </p>
+            <div class="content-item">
+              <span>Tecno Camon 16 S</span>
+              <span>Android 10</span>
+              <span>128GO ROM, 4GO RAM</span>
+            </div>
+          </div>
+          <div class="item" [appAnimation]="2">
+            <p class="title">- Casque Oraimo</p>
+            <div class="content-item"></div>
+          </div>
+          <div class="item" [appAnimation]="2">
+            <p class="title">- Navigators</p>
+            <div class="content-item">
+              <span>Google</span>
+              <span>Opera</span>
+            </div>
+          </div>
+          <div class="item" [appAnimation]="2">
+            <p class="title">- Apps</p>
+            <div class="content-item">
+              <span>ChatGpt and Gemini (IA)</span>
+              <span>VsCode , Android Studio</span>
+              <!-- <span>Spotify , Netflix</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="preferences">
+      <div class="title" [appAnimation]="2">
+        <h1>{{ "about_preferences_title_h1" | translate }}</h1>
+      </div>
+      <div class="content">
+        <div class="item">
+          <div class="header" [appAnimation]="2">
+            <p>{{ "about_preferences_content_item1_header_p" | translate }}</p>
+          </div>
+          <div class="item-content" [appAnimation]="2">
+            <div class="box">
+              <img src="" alt="" />
+              <a href="/about">TIL Stack</a>
+              <span inert>{{
+                "about_preferences_content_item1_item-content_box_span1"
+                  | translate
+              }}</span>
+              <div class="foot">
+                <div class="like">
+                  <!-- <fa-icon [icon]="faHeart"></fa-icon> -->
+                  <div class="number">{{ number }}</div>
+                </div>
+                <span class="date">01/01/2024</span>
+              </div>
+            </div>
+            <div
+              class="box"
+              (click)="
+                navigateTo(
+                  'https://x.com/israelTientcheu/status/1788477352093090092'
+                )
+              "
+            >
+              <img src="" alt="" />
+              <a href="/about">TIL Stack</a>
+              <span inert>{{
+                "about_preferences_content_item1_item-content_box_span2"
+                  | translate
+              }}</span>
+              <div class="foot">
+                <div class="like">
+                  <!-- <fa-icon [icon]="faHeart"></fa-icon> -->
+                  <div class="number">{{ number }}</div>
+                </div>
+                <span class="date">09/05/2024</span>
+              </div>
+            </div>
+            <div
+              class="box"
+              (click)="
+                navigateTo(
+                  'https://x.com/israelTientcheu/status/1783440365556580601'
+                )
+              "
+            >
+              <img src="" alt="" />
+              <a href="/about">TIL Stack</a>
+              <span inert>{{
+                "about_preferences_content_item1_item-content_box_span3"
+                  | translate
+              }}</span>
+              <div class="foot">
+                <div class="like">
+                  <!-- <fa-icon [icon]="faHeart"></fa-icon> -->
+                  <div class="number">{{ number2 }}</div>
+                </div>
+                <span class="date">25/04/2024</span>
+              </div>
+            </div>
+          </div>
+          <a href="/citations">See more!</a>
+        </div>
+        <div class="item">
+          <div class="header" [appAnimation]="2">
+            <p>{{ "about_preferences_content_item2_header_p" | translate }}</p>
+          </div>
+          <div class="item-content" [appAnimation]="2">
+            <div class="card-book">
+              <p>- Title: <span>Chronique d'une Jeunesse Africaine</span></p>
+              <p>- Autor: <span>Abel Kam</span></p>
+              <p>- Status: <span class="status">In Progress...</span></p>
+            </div>
 
-        <!-- <div class="social-media">
+            <div class="card-book">
+              <p>- Title: <span>La magie de voir Grand</span></p>
+              <p>- Autor: <span>David J. Schwartz</span></p>
+              <p>- Status: <span class="status">Finished</span></p>
+            </div>
+
+            <div class="card-book">
+              <p>- Title: <span>L'art d'avoir toujours raison</span></p>
+              <p>- Autor: <span>Arthur Schopenhauer</span></p>
+              <p>- Status: <span class="status">In Progress...</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="header" [appAnimation]="2">
+            <p>{{ "about_preferences_content_item3_header_p" | translate }}</p>
+          </div>
+          <div class="item-content" [appAnimation]="2">
+            <div class="card-article">
+              <div class="link1">
+                <a href="https://zerofiltre.tech/articles/282"
+                  >https://zerofiltre.tech/articles/282</a
+                >
+              </div>
+              <div class="content-article">
+                <div class="right1">
+                  <div class="site">Zerofiltre.tech</div>
+                  <div class="titre">
+                    {{
+                      "about_preferences_content_item3_item-content_card-article1_content-article_right1_titre"
+                        | translate
+                    }}
+                  </div>
+                  <div class="desc">
+                    {{
+                      "about_preferences_content_item3_item-content_card-article1_content-article_right1_desc"
+                        | translate
+                    }}
+                  </div>
+                </div>
+                <div class="left1">
+                  <img
+                    src="https://ik.imagekit.io/lfegvix1p/tr:w-1200,ar-auto,dpr-auto,di-Article_default_oz_Yb-VZj.svg/toast_flutter_2024.png"
+                    alt="toast"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card-article">
+              <div class="link1">
+                <a href="https://zerofiltre.tech/articles/232"
+                  >https://zerofiltre.tech/articles/232</a
+                >
+              </div>
+              <div class="content-article">
+                <div class="right1">
+                  <div class="site">Zerofiltre.tech</div>
+                  <div class="titre">
+                    {{
+                      "about_preferences_content_item3_item-content_card-article2_content-article_right1_titre"
+                        | translate
+                    }}
+                  </div>
+                  <div class="desc">
+                    {{
+                      "about_preferences_content_item3_item-content_card-article2_content-article_right1_desc"
+                        | translate
+                    }}
+                  </div>
+                </div>
+                <div class="left1">
+                  <img
+                    src="https://ik.imagekit.io/lfegvix1p/tr:w-1200,ar-auto,dpr-auto,di-Article_default_oz_Yb-VZj.svg/Screenshot%202023-05-12%20100633.png"
+                    alt="toast"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="https://zerofiltre.tech/articles">See more!</a>
+        </div>
+        <div class="item">
+          <div class="header" [appAnimation]="2">
+            <p>{{ "about_preferences_content_item4_header_p" | translate }}</p>
+          </div>
+          <div class="item-content" [appAnimation]="2">
+            <div class="scroll-container">
+              <figure class="snip1585">
+                <img src="../../assets/img/hunter.jpeg" alt="sample70" />
+                <figcaption>
+                  <h3>
+                    TILSTack
+                    <span>{{
+                      "about_preferences_content_item4_item-content_figure1_figcaption_h3"
+                        | translate
+                    }}</span>
+                  </h3>
+                </figcaption>
+                <a
+                  href="https://twitter.com/israelTientcheu/status/1768388830246121650"
+                ></a>
+              </figure>
+              <figure class="snip1585">
+                <img src="../../assets/img/home.jpeg" alt="sample70" />
+                <figcaption>
+                  <h3>
+                    TILSTack
+                    <span>{{
+                      "about_preferences_content_item4_item-content_figure2_figcaption_h3"
+                        | translate
+                    }}</span>
+                  </h3>
+                </figcaption>
+                <a
+                  href="https://twitter.com/israelTientcheu/status/1709566647361589398"
+                ></a>
+              </figure>
+              <figure class="snip1585">
+                <img src="../../assets/img/me.jpeg" alt="sample70" />
+                <figcaption>
+                  <h3>
+                    TILSTack
+                    <span>{{
+                      "about_preferences_content_item4_item-content_figure3_figcaption_h3"
+                        | translate
+                    }}</span>
+                  </h3>
+                </figcaption>
+                <a
+                  href="https://twitter.com/israelTientcheu/status/1660977267294588928"
+                ></a>
+              </figure>
+              <figure class="snip1585">
+                <img src="../../assets/img/sky.jpeg" alt="sample70" />
+                <figcaption>
+                  <h3>
+                    TILSTack
+                    <span>{{
+                      "about_preferences_content_item4_item-content_figure4_figcaption_h3"
+                        | translate
+                    }}</span>
+                  </h3>
+                </figcaption>
+                <a
+                  href="https://twitter.com/israelTientcheu/status/1725035271467454467"
+                ></a>
+              </figure>
+              <figure class="snip1585">
+                <img src="../../assets/img/sky.jpeg" alt="sample70" />
+                <figcaption>
+                  <h3>
+                    TILSTack
+                    <span>{{
+                      "about_preferences_content_item4_item-content_figure4_figcaption_h3"
+                        | translate
+                    }}</span>
+                  </h3>
+                </figcaption>
+                <a
+                  href="https://twitter.com/israelTientcheu/status/1725035271467454467"
+                ></a>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="social-media">
             <div class="title"  [appAnimation]="2">
                 <h1>My Social Medias</h1>
             </div>
@@ -276,5 +369,5 @@
                 </li>                
             </ul>
         </div> -->
-    </div>   
+  </div>
 </div>
