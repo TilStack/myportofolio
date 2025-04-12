@@ -1,8 +1,8 @@
-import { DOCUMENT } from "@angular/common";
-import { Inject, Injectable } from "@angular/core";
-import { BehaviorSubject, Observable } from "rxjs";
-import { Mode } from "./mode.model";
-import { MODE_STORAGE_SERVICE, ModeStorage } from "./storage.service";
+import { DOCUMENT } from '@angular/common';
+import { Inject, Injectable } from '@angular/core';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { Mode } from './mode.model';
+import { MODE_STORAGE_SERVICE, ModeStorage } from './storage.service';
 
 /**
  * Angular service that provides the mode toggle feature.
@@ -53,11 +53,11 @@ export class ModeToggleService {
    * Flow as below
    * 1 - If there is a saved mode in the browser - use this as the initial value
    * 2 - If there is no saved mode, Check for the preferred device theme
-   * 3 - If device theme is dark, set the init value to `dark` 
+   * 3 - If device theme is dark, set the init value to `dark`
    * 4 - Else set the default value to `light`
    */
   private init() {
-    const deviceMode = window.matchMedia("(prefers-color-scheme: dark)");
+    const deviceMode = window.matchMedia('(prefers-color-scheme: dark)');
     let initMode = this.modeStorage.get();
     if (!initMode) {
       deviceMode.matches ? (initMode = Mode.DARK) : (initMode = Mode.LIGHT);

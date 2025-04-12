@@ -4,7 +4,7 @@ import { Mode } from 'src/styles/mode.model';
 import { ModeToggleService } from 'src/styles/mode.service';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
-import { TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterOutlet } from '@angular/router';
 import { AppBarComponent } from './appBar/appBar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -19,6 +19,7 @@ import { SplashComponent } from './splash/splash.component';
     AppBarComponent,
     FooterComponent,
     SplashComponent,
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
