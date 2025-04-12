@@ -5,11 +5,10 @@ import { AnimationDirective } from '../animations/animation.directive';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-home',
-  standalone: true,
-  imports: [AnimationDirective, TranslateModule],
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss', './home-responsive.component.scss'],
+    selector: 'app-home',
+    imports: [AnimationDirective, TranslateModule],
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss', './home-responsive.component.scss']
 })
 export class HomeComponent implements OnInit {
   faArrowRight = faArrowRight;

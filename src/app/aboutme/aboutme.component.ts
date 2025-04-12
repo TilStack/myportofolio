@@ -4,14 +4,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { AnimationDirective } from '../animations/animation.directive';
 
 @Component({
-  selector: 'app-aboutme',
-  standalone: true,
-  imports: [TranslateModule, AnimationDirective],
-  templateUrl: './aboutme.component.html',
-  styleUrls: [
-    './aboutme.component.scss',
-    './aboutme-responsive.component.scss',
-  ],
+    selector: 'app-aboutme',
+    imports: [TranslateModule, AnimationDirective],
+    templateUrl: './aboutme.component.html',
+    styleUrls: [
+        './aboutme.component.scss',
+        './aboutme-responsive.component.scss',
+    ]
 })
 export class AboutmeComponent implements OnInit {
   faArrowRight = faArrowRight;

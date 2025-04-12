@@ -10,11 +10,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-appBar',
-  standalone: true,
-  imports: [CommonModule, TranslateModule],
-  templateUrl: './appBar.component.html',
-  styleUrls: ['./appBar.component.scss', './app-bar-responsive.component.scss'],
+    selector: 'app-appBar',
+    imports: [CommonModule, TranslateModule],
+    templateUrl: './appBar.component.html',
+    styleUrls: ['./appBar.component.scss', './app-bar-responsive.component.scss']
 })
 export class AppBarComponent implements OnInit {
   faBars = faBars;

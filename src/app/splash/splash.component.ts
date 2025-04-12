@@ -3,11 +3,10 @@ import { SplashAnimationType } from './type';
 import { CommonModule, NgStyle } from '@angular/common';
 
 @Component({
-  selector: 'app-splash',
-  standalone: true,
-  imports: [NgStyle, CommonModule],
-  templateUrl: './splash.component.html',
-  styleUrls: ['./splash.component.scss', 'splash-responsive.component.scss'],
+    selector: 'app-splash',
+    imports: [NgStyle, CommonModule],
+    templateUrl: './splash.component.html',
+    styleUrls: ['./splash.component.scss', 'splash-responsive.component.scss']
 })
 export class SplashComponent implements OnInit {
   windowWidth: string;

@@ -4,11 +4,10 @@ import { interval } from 'rxjs';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-footer',
-  standalone: true,
-  imports: [TranslateModule, DatePipe],
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss', './footer-responsive.component.scss'],
+    selector: 'app-footer',
+    imports: [TranslateModule, DatePipe],
+    templateUrl: './footer.component.html',
+    styleUrls: ['./footer.component.scss', './footer-responsive.component.scss']
 })
 export class FooterComponent implements OnInit {
   datetime = new Date();

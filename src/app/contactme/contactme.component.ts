@@ -8,14 +8,13 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-contactme',
-  standalone: true,
-  imports: [AnimationDirective, TranslateModule, FormsModule],
-  templateUrl: './contactme.component.html',
-  styleUrls: [
-    './contactme.component.scss',
-    './contactme-responsive.component.scss',
-  ],
+    selector: 'app-contactme',
+    imports: [AnimationDirective, TranslateModule, FormsModule],
+    templateUrl: './contactme.component.html',
+    styleUrls: [
+        './contactme.component.scss',
+        './contactme-responsive.component.scss',
+    ]
 })
 export class ContactmeComponent implements OnInit {
   faRightFromBracket = faRightFromBracket;
