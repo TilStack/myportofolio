@@ -11,17 +11,18 @@ import { FooterComponent } from './footer/footer.component';
 import { SplashComponent } from './splash/splash.component';
 
 @Component({
-    selector: 'app-root',
-    imports: [
-        CommonModule,
-        RouterOutlet,
-        AppBarComponent,
-        FooterComponent,
-        SplashComponent,
-        TranslateModule,
-    ],
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+  selector: 'app-root',
+  standalone: true,
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    AppBarComponent,
+    FooterComponent,
+    SplashComponent,
+    TranslateModule,
+  ],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   faArrowUp = faArrowUp;

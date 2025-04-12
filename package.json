@@ -17,6 +17,7 @@
     "@angular/forms": "^19.2.6",
     "@angular/platform-browser": "^19.2.6",
     "@angular/platform-browser-dynamic": "^19.2.6",
+    "@angular/platform-server": "^19.2.6",
     "@angular/router": "^19.2.6",
     "@angular/service-worker": "^19.2.6",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",

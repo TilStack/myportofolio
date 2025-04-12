@@ -4,13 +4,14 @@ import { TranslateModule } from '@ngx-translate/core';
 import { AnimationDirective } from '../animations/animation.directive';
 
 @Component({
-    selector: 'app-citation',
-    imports: [TranslateModule, AnimationDirective],
-    templateUrl: './citation.component.html',
-    styleUrls: [
-        './citation.component.scss',
-        './citation-responsive.component.scss',
-    ]
+  selector: 'app-citation',
+  standalone: true,
+  imports: [TranslateModule, AnimationDirective],
+  templateUrl: './citation.component.html',
+  styleUrls: [
+    './citation.component.scss',
+    './citation-responsive.component.scss',
+  ],
 })
 export class CitationComponent implements OnInit {
   faSearch = faSearch;
