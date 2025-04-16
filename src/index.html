@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="script-src 'self' 'nonce-RANDOM_NONCE' https://www.googletagmanager.com;"
+      content="script-src 'self' 'sha256-g2gN979wHhMHCtHr7Fmlpf8XdTNFBZJ9QvenQc/d1z4=' https://www.googletagmanager.com;"
     />
     <title>TilStack | Portofolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -21,30 +21,14 @@
     <app-root></app-root>
     <div class="cursor"></div>
     <div class="cursor2"></div>
-    <script nonce="RANDOM_NONCE">
-      var cursor = document.querySelector(".cursor");
-      var cursor2 = document.querySelector(".cursor2");
-      document.addEventListener("mousemove", function (e) {
-        console.log(e);
-        cursor.style.cssText = cursor2.style.cssText =
-          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-      });
-    </script>
+    <script src="assets/js/cursor.js" defer></script>
     <!-- Google tag (gtag.js) -->
 
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-K9ZP58PXRR"
     ></script>
-    <script nonce="RANDOM_NONCE">
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-K9ZP58PXRR");
-    </script>
+    <script src="assets/js/window.js" defer></script>
     <noscript
       >Please enable JavaScript to continue using this application.</noscript
     >
