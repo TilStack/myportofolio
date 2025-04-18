@@ -16,8 +16,11 @@ import {
 import { TranslateLoader } from '@ngx-translate/core';
 import { provideHttpClient, HttpClient, withFetch } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { TranslateModule } from '@ngx-translate/core';
 import { ModeToggleService } from 'src/styles/mode.service';
+import Aura from '@primeng/themes/aura';
+import { providePrimeNG } from 'primeng/config';
 
 export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -28,6 +31,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideHttpClient(withFetch()),
+    provideAnimationsAsync(),
+    providePrimeNG({}),
     importProvidersFrom([
       TranslateModule.forRoot({
         defaultLanguage: 'en',
